@@ -1,0 +1,227 @@
+# CUBA DIGEST - Sources Configuration
+#
+# YouTube channels support multiple identifier formats:
+#   channel_id:  UC...  (most reliable - preferred)
+#   handle:      @-less handle, e.g. "MartiNoticias"
+#   channel_url: full YouTube URL
+#
+# If no identifier resolves, the channel is skipped gracefully.
+# Set enabled: false to explicitly disable a source.
+#
+# cuba_filter: true  →  only keep items whose title/description mentions Cuba.
+#                        Use for international/diaspora sources that cover many topics.
+
+youtube:
+  lookback_hours: 48
+  max_videos_per_channel: 5
+
+  channels:
+    # ── Independientes ───────────────────────────────────────────────────────
+    - name: "Martí Noticias"
+      channel_id: "UCT6G68lD2FQvHwIJ5FEZgcg"   # @TVMartinoticias — verified active 2026
+      handle: null
+      channel_url: null
+      tier: "independiente"
+      weight: 1.0
+      enabled: true
+      description: "Servicio noticioso financiado por el Congreso de EEUU. Cubre Cuba con periodismo de investigación desde Miami."
+
+    - name: "CiberCuba"
+      channel_id: null
+      handle: "CiberCuba"
+      channel_url: null
+      tier: "independiente"
+      weight: 0.9
+      enabled: true
+      description: "Medio digital independiente fundado en 2015. Noticias, análisis y reportajes sobre Cuba desde España."
+
+    - name: "23 y Flagler"
+      channel_id: "UCc9UNgeZcu_lNFBoPvym7Qg"   # @23yFlagler — verified active
+      handle: null
+      channel_url: null
+      tier: "independiente"
+      weight: 0.8
+      enabled: true
+      description: "Canal de análisis político y noticias cubanas conducido por periodistas independientes desde Miami."
+
+    # ── Diáspora ────────────────────────────────────────────────────────────
+    - name: "Juan Manuel Cao"
+      channel_id: "UC3R8XnV72_jOQDiFBXZblOA"   # @juanmanuelcaolive — verificado activo 2026
+      handle: null
+      channel_url: null
+      tier: "diaspora"
+      weight: 1.0
+      enabled: true
+      description: "Periodista y comentarista cubano-americano. Entrevistas y análisis político desde Miami."
+
+    - name: "Cubanos por el Mundo"
+      channel_id: "UCStpmWgJy7Q_Pp0Qy-06x7A"   # @CubanosporelMundoLive — verificado activo 2026
+      handle: null
+      channel_url: null
+      tier: "diaspora"
+      weight: 0.9
+      enabled: true
+      description: "Cobertura de la comunidad cubana en el exterior. Testimonios, migración y vida en la diáspora."
+
+    - name: "Alex Otaola"
+      channel_id: "UCC1xeuEoXzmhJ3Kuf39eNAg"   # @OTAOLACASAL — verificado activo
+      handle: null
+      channel_url: null
+      tier: "diaspora"
+      weight: 0.8
+      enabled: true
+      description: "Showman y comentarista político cubano-americano. Entretenimiento, política y actualidad cubana."
+
+    - name: "Mario Pentón"
+      channel_id: "UCNnAyfKpcz1BnleJzWV6DxQ"   # @MarioJPenton — verificado activo 2026
+      handle: null
+      channel_url: null
+      tier: "diaspora"
+      weight: 1.0
+      enabled: true
+      description: "Periodista cubano-americano, ex-Martí Noticias. Reportajes e investigaciones sobre Cuba."
+
+    - name: "Pepe Fuerte"
+      channel_id: "UCjDw_HbGklSFJypH-00Kuig"   # @PepeForte — verificado activo 2026
+      handle: null
+      channel_url: null
+      tier: "diaspora"
+      weight: 0.8
+      enabled: true
+      description: "Análisis y comentario político sobre Cuba y Venezuela desde la perspectiva de la diáspora."
+
+    - name: "Abraham Rivera"
+      channel_id: "UC8efFuJV21WlM7Ebg2mXWLA"   # @abrahambenm — verificado activo 2026
+      handle: null
+      channel_url: null
+      tier: "diaspora"
+      weight: 0.8
+      enabled: true
+      description: "Comentarista cubano. Análisis de la actualidad política y social cubana."
+
+    - name: "Rolando Nápoles"
+      channel_id: "UCxI_OyQlzwRXzTIJlxhvdHA"   # @rolando-napoles — verificado activo 2026
+      handle: null
+      channel_url: null
+      tier: "diaspora"
+      weight: 0.7
+      enabled: true
+      description: "Periodista y analista cubano desde el exilio. Política, economía y sociedad cubana."
+
+    - name: "Carlitos Madrid"
+      channel_id: "UCvVd3U6gaAuMqlfx9yvnOsg"   # @Karlitomadrid — verificado activo 2026
+      handle: null
+      channel_url: null
+      tier: "diaspora"
+      weight: 0.6
+      enabled: true
+      description: "Creador de contenido cubano-americano. Noticias y opinión sobre la actualidad cubana."
+
+    - name: "Daniel Benítez"
+      channel_id: "UCu6mWAqzi9UP_is66tAuOyA"   # @DanielBenitezNews — verificado activo 2026
+      handle: null
+      channel_url: null
+      tier: "independiente"
+      weight: 0.7
+      enabled: true
+      description: "Periodista independiente cubano. Reportajes sobre Cuba desde el exterior."
+
+    - name: "El Canal de las Emociones"
+      channel_id: "UCs9WLc9Dvci5ctVDXMQ3xuQ"   # @ElCanaldelasEmociones — verificado activo 2026
+      handle: null
+      channel_url: null
+      tier: "diaspora"
+      weight: 0.5
+      enabled: true
+      description: "Canal de la diáspora cubana con testimonios personales y actualidad desde la comunidad."
+
+# ─── RSS / News Feeds ────────────────────────────────────────────────────────
+
+rss:
+  lookback_hours: 48
+  max_items_per_feed: 10
+  request_timeout: 10      # seconds per feed request
+
+  feeds:
+    # ── Independientes ──────────────────────────────────────────────────────
+    - name: "14ymedio"
+      url: "https://www.14ymedio.com/rss/"
+      tier: "independiente"
+      weight: 1.0
+      enabled: true
+      description: "Periódico digital fundado por Yoani Sánchez en 2014. Periodismo independiente desde dentro y fuera de Cuba."
+
+    - name: "CiberCuba"
+      url: "https://cibercuba.com/rss.xml"
+      tier: "independiente"
+      weight: 1.0
+      enabled: true
+      description: "Medio digital independiente fundado en 2015. Noticias, análisis y reportajes sobre Cuba desde España."
+
+    - name: "Diario de Cuba"
+      url: "https://diariodecuba.com/feed/"
+      tier: "independiente"
+      weight: 1.0
+      enabled: false         # 403 Forbidden — blocked
+      description: "Diario digital independiente con sede en Madrid. Cubre política, derechos humanos y sociedad cubana."
+
+    - name: "Cubanet"
+      url: "https://www.cubanet.org/feed/"
+      tier: "independiente"
+      weight: 1.0
+      enabled: true
+      description: "ONG de periodismo independiente fundada en 1994. Red de corresponsales dentro y fuera de Cuba."
+
+    - name: "Martí Noticias"
+      url: "https://www.martinoticias.com/api/zr-oveqkit"
+      tier: "independiente"
+      weight: 1.0
+      enabled: false         # 404 — covered by YouTube channel instead
+      description: "Servicio noticioso de Radio y TV Martí, financiado por el Congreso de EEUU."
+
+    - name: "El Toque"
+      url: "https://eltoque.com/feed/"
+      tier: "independiente"
+      weight: 0.9
+      enabled: true
+      description: "Medio digital independiente con énfasis en economía, datos y periodismo de soluciones sobre Cuba."
+
+    - name: "ADN Cuba"
+      url: "https://adncuba.com/rss.xml"
+      tier: "independiente"
+      weight: 0.9
+      enabled: true          # Confirmed working (may be intermittent)
+      description: "Portal de noticias independiente sobre Cuba con amplia cobertura de actualidad nacional e internacional."
+
+    # ── Diáspora ────────────────────────────────────────────────────────────
+    - name: "El Nuevo Herald"
+      url: "https://www.elnuevoherald.com/noticias/mundo/america-latina/cuba-es/rss"
+      tier: "diaspora"
+      weight: 0.9
+      enabled: false         # Connection timeout — blocked
+      description: "Edición en español del Miami Herald. Cubre la comunidad cubana en EEUU y noticias de Cuba."
+
+    # ── Internacional ────────────────────────────────────────────────────────
+    - name: "BBC Mundo"
+      url: "https://feeds.bbci.co.uk/mundo/america-latina/rss.xml"
+      tier: "internacional"
+      weight: 0.8
+      cuba_filter: true      # Only keep items that mention Cuba
+      enabled: true
+      description: "Servicio en español de la BBC británica. Cobertura internacional de América Latina."
+
+    - name: "Reuters Cuba"
+      url: "https://feeds.reuters.com/reuters/topNews"
+      tier: "internacional"
+      weight: 0.8
+      cuba_filter: true
+      enabled: false         # Connection timeout
+      description: "Agencia de noticias global Reuters. Cobertura de Cuba desde corresponsales internacionales."
+
+    # ── Estatal (OFF by default — shown only when toggle is ON) ─────────────
+    - name: "Granma"
+      url: "https://www.granma.cu/feed"
+      tier: "estatal"
+      weight: 0.0
+      enabled: false         # URL confirmada — desactivado por defecto (toggle estatal)
+      description: "Órgano oficial del Partido Comunista de Cuba. Medio controlado por el gobierno cubano."

@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Pipeline output (generated at runtime — not tracked in git)
+output/
+data/processed/
+data/raw/
+logs/
+
+# OS
+.DS_Store
+Thumbs.db

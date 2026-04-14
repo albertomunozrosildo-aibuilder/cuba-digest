@@ -1,0 +1,52 @@
+# CUBA DIGEST - System Settings
+
+project:
+  name: "Cuba Digest"
+  version: "2.0"
+
+processing:
+  filtering:
+    min_description_length: 50   # chars
+    max_age_hours: 48
+
+  deduplication:
+    title_similarity_threshold: 0.82
+    enabled: true
+
+  scoring:
+    weights:
+      editorial: 0.40
+      recency:   0.30
+      engagement: 0.20
+      source_tier: 0.10
+
+    tier_scores:
+      independiente: 1.0
+      diaspora:      0.8
+      internacional: 0.6
+      estatal:       0.0
+
+    recency_buckets:
+      under_6h:  1.0
+      under_12h: 0.8
+      under_24h: 0.5
+      older:     0.2
+
+  clustering:
+    min_keyword_overlap: 3       # shared keywords to assign same topic (3 = stricter, less chaining)
+    max_topics: 15
+    min_items_for_synthesis: 2
+
+  enrichment:
+    summary_sentences: 3         # heuristic: first N sentences from description
+    insight_max_words: 50
+
+output:
+  data_dir: "./data"
+  output_dir: "./output"
+  templates_dir: "./templates"
+  digest_filename: "digest_{date}.html"
+
+logging:
+  level: "INFO"
+  file: "./logs/cubadigest.log"

@@ -1,0 +1,3467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cuba Digest — 14 de abril de 2026</title>
+<style>
+/* ── Reset & Base ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#f5f4f0;color:#1a1a1a;line-height:1.6;min-height:100vh}
+a{color:#c0392b;text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+
+/* ── Layout ── */
+.wrap{max-width:860px;margin:0 auto;padding:0 1rem}
+
+/* ── Header ── */
+.site-header{background:#1a1a1a;color:#fff;padding:.75rem 0;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.logo{font-size:1.25rem;font-weight:700;letter-spacing:-.5px;color:#fff}
+.logo span{color:#e74c3c}
+.header-meta{font-size:.8rem;color:#aaa}
+.toggle-wrap{display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:#ccc;white-space:nowrap}
+.toggle-switch{position:relative;display:inline-block;width:36px;height:20px}
+.toggle-switch input{opacity:0;width:0;height:0}
+.toggle-slider{position:absolute;cursor:pointer;inset:0;background:#555;border-radius:20px;transition:.2s}
+.toggle-slider::before{content:"";position:absolute;width:14px;height:14px;left:3px;bottom:3px;background:#fff;border-radius:50%;transition:.2s}
+input:checked + .toggle-slider{background:#e74c3c}
+input:checked + .toggle-slider::before{transform:translateX(16px)}
+
+/* ── Core del Día ── */
+.core-section{background:#fff;border-left:4px solid #e74c3c;margin:1.25rem 0;padding:1rem 1.25rem;border-radius:0 6px 6px 0;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+.core-section h2{font-size:1rem;font-weight:700;color:#e74c3c;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.75rem}
+.core-list{list-style:none}
+.core-list li{padding:.45rem 0;border-bottom:1px solid #f0f0f0}
+.core-list li:last-child{border-bottom:none}
+.core-list li::before{content:"•";color:#e74c3c;margin-right:.5rem}
+.core-headline{font-size:.95rem;font-weight:600;color:#1a1a1a}
+.core-headline a{color:inherit}
+.core-headline a:hover{color:#c0392b}
+.core-sources{font-size:.75rem;color:#999;margin-top:.2rem;margin-left:1rem}
+.core-sources a{color:#888;margin-right:.4rem}
+.core-sources a:hover{color:#c0392b}
+
+/* ── Tabs ── */
+.tabs-nav{display:flex;overflow-x:auto;background:#fff;border-bottom:2px solid #e8e8e8;margin-bottom:0;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabs-nav::-webkit-scrollbar{display:none}
+.tab-btn{flex-shrink:0;padding:.65rem 1.1rem;font-size:.875rem;font-weight:600;color:#666;border:none;background:none;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;transition:color .15s,border-color .15s;white-space:nowrap}
+.tab-btn:hover{color:#1a1a1a}
+.tab-btn.active{color:#e74c3c;border-bottom-color:#e74c3c}
+.tab-panel{display:none;padding:1rem 0}
+.tab-panel.active{display:block}
+
+/* ── Topic Card ── */
+.topic-card{background:#fff;border-radius:8px;margin-bottom:1.25rem;box-shadow:0 1px 4px rgba(0,0,0,.07);overflow:hidden}
+.topic-header{padding:1rem 1.25rem .75rem;border-bottom:1px solid #f0f0f0}
+.topic-name{font-size:1.05rem;font-weight:700;color:#1a1a1a;margin-bottom:.4rem}
+.topic-meta{font-size:.78rem;color:#888}
+.topic-body{padding:.75rem 1.25rem}
+.topic-synthesis{font-size:.9rem;color:#444;line-height:1.65;margin-bottom:1rem;padding:.75rem;background:#fafaf8;border-radius:4px;border-left:3px solid #e8e0d0}
+.section-label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#999;margin:.75rem 0 .4rem}
+
+/* ── Item ── */
+.item{padding:.6rem 0;border-bottom:1px solid #f5f5f5}
+.item:last-child{border-bottom:none}
+.item-title{font-size:.9rem;font-weight:600;color:#1a1a1a;margin-bottom:.2rem}
+.item-title a{color:inherit}
+.item-title a:hover{color:#c0392b}
+.item-meta{font-size:.75rem;color:#999;margin-bottom:.25rem}
+.item-summary{font-size:.82rem;color:#555;line-height:1.55;margin:.25rem 0}
+.item-insight{font-size:.78rem;color:#888;font-style:italic;margin-top:.2rem}
+.read-link{display:inline-block;font-size:.75rem;font-weight:600;color:#e74c3c;margin-top:.3rem}
+.read-link::after{content:" →"}
+
+/* ── Video card ── */
+.video-card{display:flex;gap:.85rem;padding:.75rem 0;border-bottom:1px solid #f0f0f0;align-items:flex-start}
+.video-card:last-child{border-bottom:none}
+.video-thumb{width:110px;flex-shrink:0;border-radius:4px;overflow:hidden;background:#eee;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center}
+.video-thumb img{width:100%;height:100%;object-fit:cover}
+.video-thumb .no-thumb{font-size:1.4rem;color:#bbb}
+.video-info{flex:1;min-width:0}
+.video-title{font-size:.9rem;font-weight:600;color:#1a1a1a;line-height:1.35;margin-bottom:.2rem}
+.video-title a{color:inherit}
+.video-title a:hover{color:#c0392b}
+.video-meta{font-size:.75rem;color:#999;margin-bottom:.25rem}
+.video-summary{font-size:.82rem;color:#555;line-height:1.5}
+.views-badge{background:#f0f0f0;border-radius:3px;padding:.1rem .4rem;font-size:.72rem;color:#666}
+
+/* ── Source group (Medios tab) ── */
+.source-group{background:#fff;border-radius:8px;margin-bottom:1rem;box-shadow:0 1px 4px rgba(0,0,0,.07);overflow:hidden}
+.source-group-header{padding:.75rem 1.25rem;background:#fafafa;border-bottom:1px solid #f0f0f0;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.source-group-header:hover{background:#f5f5f5}
+.source-name{font-size:.95rem;font-weight:700}
+.source-desc{font-size:.75rem;color:#888;font-style:italic;margin-top:.15rem}
+.source-count{font-size:.78rem;color:#888}
+.source-group-body{padding:.25rem 1.25rem .75rem}
+.source-item{padding:.45rem 0;border-bottom:1px solid #f8f8f8;font-size:.88rem}
+.source-item:last-child{border-bottom:none}
+.source-item-title a{color:#1a1a1a;font-weight:500}
+.source-item-title a:hover{color:#c0392b}
+.source-item-meta{font-size:.73rem;color:#aaa;margin-top:.1rem}
+
+/* ── Tier section headings ── */
+.tier-heading{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:.5rem 0 .3rem;color:#666;border-bottom:2px solid #e8e8e8;margin:1rem 0 .5rem}
+.tier-independiente{color:#1a7a3e}
+.tier-diaspora{color:#1a56a0}
+.tier-internacional{color:#9a5000}
+.tier-estatal{color:#9a1c1c}
+
+/* ── Tier badges ── */
+.badge{display:inline-block;padding:.1rem .45rem;border-radius:3px;font-size:.7rem;font-weight:600;vertical-align:middle}
+.badge-independiente{background:#e6f4ea;color:#1a7a3e}
+.badge-diaspora{background:#e8f0fe;color:#1a56a0}
+.badge-internacional{background:#fef3e2;color:#9a5000}
+.badge-estatal{background:#fce8e6;color:#9a1c1c}
+
+/* ── Trending ── */
+.trending-item{display:flex;align-items:flex-start;gap:.75rem;padding:.7rem 0;border-bottom:1px solid #f0f0f0}
+.trending-item:last-child{border-bottom:none}
+.trending-rank{font-size:1.4rem;font-weight:900;color:#e8e0d8;min-width:2rem;text-align:center;line-height:1}
+.trending-info{flex:1}
+.trending-title{font-size:.9rem;font-weight:600;color:#1a1a1a}
+.trending-title a{color:inherit}
+.trending-title a:hover{color:#c0392b}
+.trending-meta{font-size:.75rem;color:#aaa;margin-top:.15rem}
+
+/* ── Cuba Global ── */
+.global-item{background:#fff;border-radius:6px;padding:.85rem 1rem;margin-bottom:.75rem;box-shadow:0 1px 3px rgba(0,0,0,.06);border-left:3px solid #f39c12}
+.global-item-source{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#f39c12;margin-bottom:.25rem}
+.global-item-title{font-size:.92rem;font-weight:600;color:#1a1a1a;margin-bottom:.3rem}
+.global-item-title a{color:inherit}
+.global-item-title a:hover{color:#c0392b}
+.global-item-summary{font-size:.82rem;color:#555;line-height:1.55}
+.global-item-meta{font-size:.73rem;color:#aaa;margin-top:.3rem}
+
+/* ── Estatal section ── */
+.estatal-warning{background:#fef3f2;border:1px solid #fdd;border-radius:6px;padding:.65rem .9rem;margin:.75rem 0;font-size:.8rem;color:#9a1c1c}
+.estatal-warning strong{display:block;margin-bottom:.2rem}
+.estatal-content{display:none}
+.estatal-content.visible{display:block}
+
+/* ── Empty states ── */
+.empty-state{text-align:center;padding:2rem 1rem;color:#bbb;font-size:.9rem}
+.empty-state .emoji{font-size:2rem;display:block;margin-bottom:.5rem}
+
+/* ── Collapsible ── */
+.collapsible-trigger{cursor:pointer;user-select:none}
+.collapsible-trigger .chevron{display:inline-block;transition:transform .2s;margin-left:.25rem}
+.collapsible-trigger.open .chevron{transform:rotate(180deg)}
+.collapsible-body{display:none}
+.collapsible-body.open{display:block}
+
+/* ── More items toggle ── */
+.more-toggle{font-size:.78rem;color:#888;cursor:pointer;padding:.3rem 0;display:inline-block}
+.more-toggle:hover{color:#e74c3c}
+.more-items{display:none}
+.more-items.open{display:block}
+
+/* ── Footer ── */
+.site-footer{margin-top:2rem;padding:1.5rem 0;border-top:1px solid #e8e8e8;text-align:center;font-size:.75rem;color:#bbb}
+
+/* ── Responsive ── */
+@media(max-width:600px){
+  .video-thumb{width:80px}
+  .tab-btn{padding:.55rem .8rem;font-size:.8rem}
+  .topic-name{font-size:.97rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="logo">🇨🇺 Cuba<span>Digest</span></div>
+    <div class="header-meta">14 de abril de 2026</div>
+    <div class="toggle-wrap">
+      <span>Cobertura estatal</span>
+      <label class="toggle-switch" title="Mostrar/ocultar cobertura de medios estatales">
+        <input type="checkbox" id="estatal-toggle">
+        <span class="toggle-slider"></span>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" style="padding-top:1rem;padding-bottom:2rem">
+
+<!-- ═══════════════════════════ CORE DEL DÍA ═══════════════════════════ -->
+<section class="core-section">
+  <h2>🔥 Core del día</h2>
+  <ul class="core-list">
+    
+    <li>
+      <div class="core-headline">
+        <a href="https://www.youtube.com/watch?v=weknGyaqOrA" target="_blank" rel="noopener">Régimen cubano y sus aliados preparan una trampa con ciertos presos políticos</a>
+      </div>
+      
+      <div class="core-sources">
+        Cobertura:
+        <a href="https://www.cubanet.org/como-de-un-campo-de-concentracion-asi-salio-de-prision-un-manifestante-cubano-del-11j/" target="_blank" rel="noopener">Cubanet</a> · <a href="https://www.14ymedio.com/cuba/excarcelado-desnutricion-severa-preso-politico_1_1125667.html" target="_blank" rel="noopener">14ymedio</a> · <a href="https://www.youtube.com/watch?v=weknGyaqOrA" target="_blank" rel="noopener">Mario Pentón</a> · <a href="https://www.youtube.com/watch?v=hwuIRYXM6J8" target="_blank" rel="noopener">Daniel Benítez</a> · <a href="https://www.youtube.com/watch?v=jhkUa07Ml1c" target="_blank" rel="noopener">Martí Noticias</a> · <a href="https://www.youtube.com/shorts/M7y_v43zKkA" target="_blank" rel="noopener">CiberCuba</a>
+      </div>
+      
+    </li>
+    
+    <li>
+      <div class="core-headline">
+        <a href="https://www.youtube.com/shorts/-BpisXCUq28" target="_blank" rel="noopener">Análisis: Díaz-Canel cometió un grave error en entrevista con NBC. En Washington observan</a>
+      </div>
+      
+      <div class="core-sources">
+        Cobertura:
+        <a href="https://www.cubanet.org/dictador-titere-gimenez-carga-contra-diaz-canel-tras-su-entrevista-con-nbc/" target="_blank" rel="noopener">Cubanet</a> · <a href="https://www.youtube.com/shorts/-BpisXCUq28" target="_blank" rel="noopener">Martí Noticias</a> · <a href="https://www.youtube.com/watch?v=72jW3GrZPnU" target="_blank" rel="noopener">CiberCuba</a> · <a href="https://www.youtube.com/watch?v=aeSTgTgkufs" target="_blank" rel="noopener">Cubanos por el Mundo</a> · <a href="https://www.youtube.com/watch?v=nahCW0MI35I" target="_blank" rel="noopener">Carlitos Madrid</a>
+      </div>
+      
+    </li>
+    
+    <li>
+      <div class="core-headline">
+        <a href="https://www.cubanet.org/cerveceria-polar-la-industria-que-el-comunismo-devasto/" target="_blank" rel="noopener">Cervecería Polar: la industria que el comunismo devastó</a>
+      </div>
+      
+      <div class="core-sources">
+        Cobertura:
+        <a href="https://www.cubanet.org/cerveceria-polar-la-industria-que-el-comunismo-devasto/" target="_blank" rel="noopener">Cubanet</a>
+      </div>
+      
+    </li>
+    
+    <li>
+      <div class="core-headline">
+        <a href="https://www.youtube.com/watch?v=_ir0OfzA8z4" target="_blank" rel="noopener">TRUMP ENVIA NUEVO MENSAJE A LOS EXILIADOS CUBANOS | Juan Manuel Cao Live | Lunes 13 de Abril 2026</a>
+      </div>
+      
+      <div class="core-sources">
+        Cobertura:
+        <a href="https://www.youtube.com/watch?v=_ir0OfzA8z4" target="_blank" rel="noopener">Juan Manuel Cao</a> · <a href="https://www.youtube.com/watch?v=LNGfpNz6OPM" target="_blank" rel="noopener">23 y Flagler</a> · <a href="https://www.youtube.com/watch?v=lu1pzDfpJ-Q" target="_blank" rel="noopener">Cubanos por el Mundo</a>
+      </div>
+      
+    </li>
+    
+    <li>
+      <div class="core-headline">
+        <a href="https://www.youtube.com/watch?v=zX3G3EL6zgk" target="_blank" rel="noopener">Joven influencer Anna Bensi revela detalles del interrogatorio y amenazas a las que la sometieron</a>
+      </div>
+      
+      <div class="core-sources">
+        Cobertura:
+        <a href="https://www.cubanet.org/archivan-denuncia-contra-anna-bensi-y-su-madre-pero-las-amenazan-con-llevarlas-a-prision/" target="_blank" rel="noopener">Cubanet</a> · <a href="https://www.youtube.com/watch?v=zX3G3EL6zgk" target="_blank" rel="noopener">Mario Pentón</a> · <a href="https://www.youtube.com/watch?v=MJtrcWtYlGw" target="_blank" rel="noopener">Cubanos por el Mundo</a> · <a href="https://www.youtube.com/shorts/4brJlmRUDu8" target="_blank" rel="noopener">Rolando Nápoles</a>
+      </div>
+      
+    </li>
+    
+  </ul>
+</section>
+
+<!-- ═══════════════════════════ TABS ═══════════════════════════ -->
+<nav class="tabs-nav" role="tablist">
+  <button class="tab-btn active" role="tab" data-tab="temas">📌 Temas</button>
+  <button class="tab-btn" role="tab" data-tab="medios">🏢 Medios</button>
+  <button class="tab-btn" role="tab" data-tab="videos">🎥 Videos</button>
+  <button class="tab-btn" role="tab" data-tab="trending">🔥 Trending</button>
+  <button class="tab-btn" role="tab" data-tab="global">🌐 Cuba Global</button>
+</nav>
+
+<!-- ─────────── TAB: TEMAS ─────────── -->
+<div id="tab-temas" class="tab-panel active" role="tabpanel">
+  
+  
+  
+  
+  
+  
+
+  <article class="topic-card">
+    <div class="topic-header">
+      <div class="topic-name">📌 [Derechos Humanos] Como de un campo de concentración: así salió de prisión un manifestan…</div>
+      <div class="topic-meta">
+        
+        <span class="badge" style="background:#f0f0f0;color:#555;margin-right:.3rem">Derechos Humanos</span>
+        
+        6 fuentes
+         · 5 independiente
+         · 1 diáspora
+        
+      </div>
+    </div>
+    <div class="topic-body">
+
+      
+      <div class="topic-synthesis">Cubanet: Alexander Díaz Rodríguez fue arrestado durante las manifestaciones del 11J en Artemisa y condenado por supuesta “sedición” y “desacato”. on Cubanet . · 14ymedio: El manifestante del 11J, enfermo de cáncer, denuncia falta de atención médica y maltratos en la cárcel</div>
+      
+
+      <!-- Featured articles -->
+      
+      <div class="section-label">📰 Destacados</div>
+      
+      <div class="item">
+        <div class="item-title"><a href="https://www.cubanet.org/como-de-un-campo-de-concentracion-asi-salio-de-prision-un-manifestante-cubano-del-11j/" target="_blank" rel="noopener">Como de un campo de concentración: así salió de prisión un manifestante cubano del 11J</a></div>
+        <div class="item-meta">
+          <span class="badge badge-independiente">independiente</span>
+          Cubanet
+           · hace 11h
+        </div>
+        <div class="item-summary">Alexander Díaz Rodríguez fue arrestado durante las manifestaciones del 11J en Artemisa y condenado por supuesta “sedición” y “desacato”. on Cubanet .</div>
+        <div class="item-insight">Tema: Derechos Humanos. Fuente: Medio independiente cubano.</div>
+        <a href="https://www.cubanet.org/como-de-un-campo-de-concentracion-asi-salio-de-prision-un-manifestante-cubano-del-11j/" class="read-link" target="_blank" rel="noopener">Leer original</a>
+      </div>
+      
+      <div class="item">
+        <div class="item-title"><a href="https://www.14ymedio.com/cuba/excarcelado-desnutricion-severa-preso-politico_1_1125667.html" target="_blank" rel="noopener">Excarcelado con desnutrición severa el preso político Alexander Díaz Rodríguez</a></div>
+        <div class="item-meta">
+          <span class="badge badge-independiente">independiente</span>
+          14ymedio
+           · hace 12h
+        </div>
+        <div class="item-summary">El manifestante del 11J, enfermo de cáncer, denuncia falta de atención médica y maltratos en la cárcel</div>
+        <div class="item-insight">Tema: Derechos Humanos. Fuente: Medio independiente cubano.</div>
+        <a href="https://www.14ymedio.com/cuba/excarcelado-desnutricion-severa-preso-politico_1_1125667.html" class="read-link" target="_blank" rel="noopener">Leer original</a>
+      </div>
+      
+      
+
+      <!-- Additional coverage -->
+      
+
+      <!-- Videos -->
+      
+      <div class="section-label">🎥 Videos relacionados (4)</div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=weknGyaqOrA" target="_blank" rel="noopener">Régimen cubano y sus aliados preparan una trampa con ciertos presos políticos</a></div>
+          <div class="video-meta">
+            Mario Pentón
+            <span class="views-badge">24K vistas</span>
+             · hace 5h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=hwuIRYXM6J8" target="_blank" rel="noopener">¿Presos políticos en Cuba? La respuesta del dictador cubano que demuestra el cinismo del régimen</a></div>
+          <div class="video-meta">
+            Daniel Benítez
+            <span class="views-badge">228 vistas</span>
+             · hace 3h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=jhkUa07Ml1c" target="_blank" rel="noopener">CUBA AL DIA</a></div>
+          <div class="video-meta">
+            Martí Noticias
+            <span class="views-badge">1K vistas</span>
+             · hace 7h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/shorts/M7y_v43zKkA" target="_blank" rel="noopener">Las condiciones en las cárceles cubanas vuelven a generar indignación</a></div>
+          <div class="video-meta">
+            CiberCuba
+            <span class="views-badge">875 vistas</span>
+             · hace 6h
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <!-- State coverage (toggle-gated) -->
+      
+
+    </div>
+  </article>
+  
+  
+  
+  
+  
+  
+
+  <article class="topic-card">
+    <div class="topic-header">
+      <div class="topic-name">📌 [Política] “Dictador títere”: Giménez carga contra Díaz-Canel tras su entrevista…</div>
+      <div class="topic-meta">
+        
+        <span class="badge" style="background:#f0f0f0;color:#555;margin-right:.3rem">Política</span>
+        
+        5 fuentes
+         · 3 independiente
+         · 2 diáspora
+        
+      </div>
+    </div>
+    <div class="topic-body">
+
+      
+      <div class="topic-synthesis">Cubanet: Giménez comparó la supuesta gallardía del mandatario cubano con la del dictador venezolano Nicolás Maduro. "¿Cómo terminó eso?". on Cubanet .</div>
+      
+
+      <!-- Featured articles -->
+      
+      <div class="section-label">📰 Destacados</div>
+      
+      <div class="item">
+        <div class="item-title"><a href="https://www.cubanet.org/dictador-titere-gimenez-carga-contra-diaz-canel-tras-su-entrevista-con-nbc/" target="_blank" rel="noopener">“Dictador títere”: Giménez carga contra Díaz-Canel tras su entrevista con NBC</a></div>
+        <div class="item-meta">
+          <span class="badge badge-independiente">independiente</span>
+          Cubanet
+           · hace 12h
+        </div>
+        <div class="item-summary">Giménez comparó la supuesta gallardía del mandatario cubano con la del dictador venezolano Nicolás Maduro. "¿Cómo terminó eso?". on Cubanet .</div>
+        <div class="item-insight">Tema: Política. Fuente: Medio independiente cubano.</div>
+        <a href="https://www.cubanet.org/dictador-titere-gimenez-carga-contra-diaz-canel-tras-su-entrevista-con-nbc/" class="read-link" target="_blank" rel="noopener">Leer original</a>
+      </div>
+      
+      
+
+      <!-- Additional coverage -->
+      
+
+      <!-- Videos -->
+      
+      <div class="section-label">🎥 Videos relacionados (4)</div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/shorts/-BpisXCUq28" target="_blank" rel="noopener">Análisis: Díaz-Canel cometió un grave error en entrevista con NBC. En Washington observan</a></div>
+          <div class="video-meta">
+            Martí Noticias
+            <span class="views-badge">7K vistas</span>
+             · hace 7h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=72jW3GrZPnU" target="_blank" rel="noopener">El modelo económico cubano vuelve al centro del debate tras nuevas declaraciones oficiales</a></div>
+          <div class="video-meta">
+            CiberCuba
+            <span class="views-badge">40 vistas</span>
+             · hace 6h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=aeSTgTgkufs" target="_blank" rel="noopener">Díaz-Canel pierde el control en NBC al ser cuestionado en vivo</a></div>
+          <div class="video-meta">
+            Cubanos por el Mundo
+            <span class="views-badge">15K vistas</span>
+             · ayer
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=nahCW0MI35I" target="_blank" rel="noopener">DICTADOR CUBANO DÍAZ CANEL LLORA EN LA ONU</a></div>
+          <div class="video-meta">
+            Carlitos Madrid
+            <span class="views-badge">7K vistas</span>
+             · ayer
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <!-- State coverage (toggle-gated) -->
+      
+
+    </div>
+  </article>
+  
+  
+  
+  
+  
+  
+
+  <article class="topic-card">
+    <div class="topic-header">
+      <div class="topic-name">📌 [Economía] Cervecería Polar: la industria que el comunismo devastó</div>
+      <div class="topic-meta">
+        
+        <span class="badge" style="background:#f0f0f0;color:#555;margin-right:.3rem">Economía</span>
+        
+        5 fuentes
+         · 5 independiente
+        
+        
+      </div>
+    </div>
+    <div class="topic-body">
+
+      
+      <div class="topic-synthesis">Cubanet: La empresa también desarrolló iniciativas sociales y culturales como los Jardines de la Polar. on Cubanet . · Cubanet: El joven se llama Jonathan Muir, y el delincuente Fernando Bécquer. Así va “la justicia” revolucionaria. on Cubanet . · Cubanet: La suspensión temporal de los vuelos, a partir de junio, está vinculada a la caída de la demanda y a las dificultades operativas en la Isla. on Cubanet .</div>
+      
+
+      <!-- Featured articles -->
+      
+      <div class="section-label">📰 Destacados</div>
+      
+      <div class="item">
+        <div class="item-title"><a href="https://www.cubanet.org/cerveceria-polar-la-industria-que-el-comunismo-devasto/" target="_blank" rel="noopener">Cervecería Polar: la industria que el comunismo devastó</a></div>
+        <div class="item-meta">
+          <span class="badge badge-independiente">independiente</span>
+          Cubanet
+           · hace 6h
+        </div>
+        <div class="item-summary">La empresa también desarrolló iniciativas sociales y culturales como los Jardines de la Polar. on Cubanet .</div>
+        <div class="item-insight">Cobertura reciente. Tema: Economía. Fuente: Medio independiente cubano.</div>
+        <a href="https://www.cubanet.org/cerveceria-polar-la-industria-que-el-comunismo-devasto/" class="read-link" target="_blank" rel="noopener">Leer original</a>
+      </div>
+      
+      <div class="item">
+        <div class="item-title"><a href="https://www.cubanet.org/un-violador-esta-en-la-calle-mientras-un-nino-continua-en-prision/" target="_blank" rel="noopener">Un violador está en la calle mientras un niño continúa en prisión</a></div>
+        <div class="item-meta">
+          <span class="badge badge-independiente">independiente</span>
+          Cubanet
+           · hace 7h
+        </div>
+        <div class="item-summary">El joven se llama Jonathan Muir, y el delincuente Fernando Bécquer. Así va “la justicia” revolucionaria. on Cubanet .</div>
+        <div class="item-insight">Cobertura reciente. Fuente: Medio independiente cubano.</div>
+        <a href="https://www.cubanet.org/un-violador-esta-en-la-calle-mientras-un-nino-continua-en-prision/" class="read-link" target="_blank" rel="noopener">Leer original</a>
+      </div>
+      
+      <div class="item">
+        <div class="item-title"><a href="https://www.cubanet.org/aerolinea-iberia-suspendera-vuelos-directos-entre-madrid-y-cuba/" target="_blank" rel="noopener">Aerolínea Iberia suspenderá vuelos directos entre Madrid y Cuba</a></div>
+        <div class="item-meta">
+          <span class="badge badge-independiente">independiente</span>
+          Cubanet
+           · hace 14h
+        </div>
+        <div class="item-summary">La suspensión temporal de los vuelos, a partir de junio, está vinculada a la caída de la demanda y a las dificultades operativas en la Isla. on Cubanet .</div>
+        <div class="item-insight">Fuente: Medio independiente cubano.</div>
+        <a href="https://www.cubanet.org/aerolinea-iberia-suspendera-vuelos-directos-entre-madrid-y-cuba/" class="read-link" target="_blank" rel="noopener">Leer original</a>
+      </div>
+      
+      
+
+      <!-- Additional coverage -->
+      
+      <div class="section-label">📄 Más cobertura (2)</div>
+      
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <span class="badge badge-independiente">independiente</span>
+          <a href="https://www.cubanet.org/persona-insuperable-artistas-cubanos-inundan-las-redes-con-despedidas-a-la-actriz-zelma-morales/" target="_blank" rel="noopener">“Persona insuperable”: artistas cubanos inundan las redes con despedidas a la actriz Zelma Morales</a>
+        </div>
+        <div class="source-item-meta">Cubanet · hace 15h</div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <span class="badge badge-independiente">independiente</span>
+          <a href="https://www.cubanet.org/el-suplicio-del-efectivo-en-cuba-como-si-el-dinero-no-fuera-tuyo/" target="_blank" rel="noopener">El suplicio del efectivo en Cuba: “Como si el dinero no fuera tuyo”</a>
+        </div>
+        <div class="source-item-meta">Cubanet · hace 16h</div>
+      </div>
+      
+      
+      
+
+      <!-- Videos -->
+      
+
+      <!-- State coverage (toggle-gated) -->
+      
+
+    </div>
+  </article>
+  
+  
+  
+  
+  
+  
+
+  <article class="topic-card">
+    <div class="topic-header">
+      <div class="topic-name">📌 [Política] TRUMP ENVIA NUEVO MENSAJE A LOS EXILIADOS CUBANOS | Juan Manuel Cao L…</div>
+      <div class="topic-meta">
+        
+        <span class="badge" style="background:#f0f0f0;color:#555;margin-right:.3rem">Política</span>
+        
+        4 fuentes
+         · 1 independiente
+         · 3 diáspora
+        
+      </div>
+    </div>
+    <div class="topic-body">
+
+      
+      <div class="topic-synthesis">TRUMP ENVIA NUEVO MENSAJE A LOS EXILIADOS CUBANOS | Juan Manuel Cao Live | Lunes 13 de Abril 2026</div>
+      
+
+      <!-- Featured articles -->
+      
+
+      <!-- Additional coverage -->
+      
+
+      <!-- Videos -->
+      
+      <div class="section-label">🎥 Videos relacionados (4)</div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=_ir0OfzA8z4" target="_blank" rel="noopener">TRUMP ENVIA NUEVO MENSAJE A LOS EXILIADOS CUBANOS | Juan Manuel Cao Live | Lunes 13 de Abril 2026</a></div>
+          <div class="video-meta">
+            Juan Manuel Cao
+            <span class="views-badge">17K vistas</span>
+             · hace un momento
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=LNGfpNz6OPM" target="_blank" rel="noopener">Trump cede ante la presión: Por qué borró su post de "Jesucristo"</a></div>
+          <div class="video-meta">
+            23 y Flagler
+            <span class="views-badge">48K vistas</span>
+             · hace 7h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=U0SsY3NMkPc" target="_blank" rel="noopener">Juan Manuel Cao Live | Lunes 13 de Abril 2026</a></div>
+          <div class="video-meta">
+            Juan Manuel Cao
+            
+             · hace 1h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=lu1pzDfpJ-Q" target="_blank" rel="noopener">Díaz-Canel MIENTE en Ginebra sobre crisis cubana y bloqueo energético</a></div>
+          <div class="video-meta">
+            Cubanos por el Mundo
+            <span class="views-badge">5K vistas</span>
+             · hace 14h
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <!-- State coverage (toggle-gated) -->
+      
+
+    </div>
+  </article>
+  
+  
+  
+  
+  
+  
+
+  <article class="topic-card">
+    <div class="topic-header">
+      <div class="topic-name">📌 [Derechos Humanos] Archivan denuncia contra Anna Bensi y su madre, pero las amenazan con…</div>
+      <div class="topic-meta">
+        
+        <span class="badge" style="background:#f0f0f0;color:#555;margin-right:.3rem">Derechos Humanos</span>
+        
+        4 fuentes
+         · 1 independiente
+         · 3 diáspora
+        
+      </div>
+    </div>
+    <div class="topic-body">
+
+      
+      <div class="topic-synthesis">Cubanet: La joven de 21 años y su madre fueron citadas en la tarde de este lunes a la estación de policía de Alamar. on Cubanet .</div>
+      
+
+      <!-- Featured articles -->
+      
+      <div class="section-label">📰 Destacados</div>
+      
+      <div class="item">
+        <div class="item-title"><a href="https://www.cubanet.org/archivan-denuncia-contra-anna-bensi-y-su-madre-pero-las-amenazan-con-llevarlas-a-prision/" target="_blank" rel="noopener">Archivan denuncia contra Anna Bensi y su madre, pero las amenazan con llevarlas a prisión</a></div>
+        <div class="item-meta">
+          <span class="badge badge-independiente">independiente</span>
+          Cubanet
+           · hace 4h
+        </div>
+        <div class="item-summary">La joven de 21 años y su madre fueron citadas en la tarde de este lunes a la estación de policía de Alamar. on Cubanet .</div>
+        <div class="item-insight">Cobertura reciente. Fuente: Medio independiente cubano.</div>
+        <a href="https://www.cubanet.org/archivan-denuncia-contra-anna-bensi-y-su-madre-pero-las-amenazan-con-llevarlas-a-prision/" class="read-link" target="_blank" rel="noopener">Leer original</a>
+      </div>
+      
+      
+
+      <!-- Additional coverage -->
+      
+
+      <!-- Videos -->
+      
+      <div class="section-label">🎥 Videos relacionados (3)</div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=zX3G3EL6zgk" target="_blank" rel="noopener">Joven influencer Anna Bensi revela detalles del interrogatorio y amenazas a las que la sometieron</a></div>
+          <div class="video-meta">
+            Mario Pentón
+            <span class="views-badge">6K vistas</span>
+             · hace 3h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=MJtrcWtYlGw" target="_blank" rel="noopener">Hermana de la activista cubana, Anna Bensi revela cómo el G2 la intimidó en Cuba</a></div>
+          <div class="video-meta">
+            Cubanos por el Mundo
+            <span class="views-badge">5K vistas</span>
+             · ayer
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/shorts/4brJlmRUDu8" target="_blank" rel="noopener">La increíble amenaza de la Seguridad del Estado en #Cuba a hermana de influencer Anna Bensi</a></div>
+          <div class="video-meta">
+            Rolando Nápoles
+            <span class="views-badge">58K vistas</span>
+             · ayer
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <!-- State coverage (toggle-gated) -->
+      
+
+    </div>
+  </article>
+  
+  
+  
+  
+  
+  
+
+  <article class="topic-card">
+    <div class="topic-header">
+      <div class="topic-name">📌 [Migración] “Es posible que hagamos una parada en Cuba”: Trump pone a la Isla en …</div>
+      <div class="topic-meta">
+        
+        <span class="badge" style="background:#f0f0f0;color:#555;margin-right:.3rem">Migración</span>
+        
+        4 fuentes
+         · 3 independiente
+         · 1 diáspora
+        
+      </div>
+    </div>
+    <div class="topic-body">
+
+      
+      <div class="topic-synthesis">Cubanet: Las declaraciones llegan en medio de una estrategia sostenida de la Administración estadounidense para restringir el suministro de combustible hacia la isla. on Cubanet .</div>
+      
+
+      <!-- Featured articles -->
+      
+      <div class="section-label">📰 Destacados</div>
+      
+      <div class="item">
+        <div class="item-title"><a href="https://www.cubanet.org/es-posible-que-hagamos-una-parada-en-cuba-trump-pone-a-la-isla-en-la-mira-tras-iran/" target="_blank" rel="noopener">“Es posible que hagamos una parada en Cuba”: Trump pone a la Isla en la mira tras Irán</a></div>
+        <div class="item-meta">
+          <span class="badge badge-independiente">independiente</span>
+          Cubanet
+           · hace 9h
+        </div>
+        <div class="item-summary">Las declaraciones llegan en medio de una estrategia sostenida de la Administración estadounidense para restringir el suministro de combustible hacia la isla. on Cubanet .</div>
+        <div class="item-insight">Tema: Economía. Fuente: Medio independiente cubano.</div>
+        <a href="https://www.cubanet.org/es-posible-que-hagamos-una-parada-en-cuba-trump-pone-a-la-isla-en-la-mira-tras-iran/" class="read-link" target="_blank" rel="noopener">Leer original</a>
+      </div>
+      
+      
+
+      <!-- Additional coverage -->
+      
+
+      <!-- Videos -->
+      
+      <div class="section-label">🎥 Videos relacionados (3)</div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=k76pusfF80o" target="_blank" rel="noopener">💥 “¡SE ACERCA EL TURNO DE CUBA!”</a></div>
+          <div class="video-meta">
+            Rolando Nápoles
+            <span class="views-badge">2K vistas</span>
+             · hace 4h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=kGIzPAuBrxM" target="_blank" rel="noopener">El Papa responde sin miedo al ataque de Trump</a></div>
+          <div class="video-meta">
+            23 y Flagler
+            <span class="views-badge">16K vistas</span>
+             · hace 13h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=ej2uf290RNY" target="_blank" rel="noopener">El efecto bumerán de Trump: Cómo su aventura en Irán lo tiene en jaque.</a></div>
+          <div class="video-meta">
+            23 y Flagler
+            <span class="views-badge">11K vistas</span>
+             · ayer
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <!-- State coverage (toggle-gated) -->
+      
+
+    </div>
+  </article>
+  
+  
+  
+  
+  
+  
+
+  <article class="topic-card">
+    <div class="topic-header">
+      <div class="topic-name">📌 [General] Cambio total del régimen en Cuba, lo que apoya quien podría ser el pr…</div>
+      <div class="topic-meta">
+        
+        2 fuentes
+         · 2 independiente
+        
+        
+      </div>
+    </div>
+    <div class="topic-body">
+
+      
+      <div class="topic-synthesis">Cambio total del régimen en Cuba, lo que apoya quien podría ser el próximo gobernador de Florida</div>
+      
+
+      <!-- Featured articles -->
+      
+
+      <!-- Additional coverage -->
+      
+
+      <!-- Videos -->
+      
+      <div class="section-label">🎥 Videos relacionados (2)</div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=AuIQsXIHH9o" target="_blank" rel="noopener">Cambio total del régimen en Cuba, lo que apoya quien podría ser el próximo gobernador de Florida</a></div>
+          <div class="video-meta">
+            Daniel Benítez
+            <span class="views-badge">2K vistas</span>
+             · hace 5h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=-UIiYW_7pVs" target="_blank" rel="noopener">Podríamos pasar por Cuba, ha sido administrada horriblemente" dijo Trump en mensaje a la dictadura</a></div>
+          <div class="video-meta">
+            Daniel Benítez
+            <span class="views-badge">6K vistas</span>
+             · hace 6h
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <!-- State coverage (toggle-gated) -->
+      
+
+    </div>
+  </article>
+  
+  
+  
+  
+  
+  
+
+  <article class="topic-card">
+    <div class="topic-header">
+      <div class="topic-name">📌 [Internacional] Noticias de la negociación de Donald Trump con Cuba</div>
+      <div class="topic-meta">
+        
+        <span class="badge" style="background:#f0f0f0;color:#555;margin-right:.3rem">Internacional</span>
+        
+        2 fuentes
+         · 2 independiente
+        
+        
+      </div>
+    </div>
+    <div class="topic-body">
+
+      
+      <div class="topic-synthesis">El Toque: La relación entre Estados Unidos y Cuba atraviesa uno de sus momentos más tensos en años, marcada por una combinación de presión económica, crisis energética y contactos discretos, de los cuales, en la mayoría de los…</div>
+      
+
+      <!-- Featured articles -->
+      
+      <div class="section-label">📰 Destacados</div>
+      
+      <div class="item">
+        <div class="item-title"><a href="https://eltoque.com/noticias-de-la-negociacion-de-donald-trump-con-cuba" target="_blank" rel="noopener">Noticias de la negociación de Donald Trump con Cuba</a></div>
+        <div class="item-meta">
+          <span class="badge badge-independiente">independiente</span>
+          El Toque
+           · hace 5h
+        </div>
+        <div class="item-summary">La relación entre Estados Unidos y Cuba atraviesa uno de sus momentos más tensos en años, marcada por una combinación de presión económica, crisis energética y contactos discretos, de los cuales, en la mayoría de los…</div>
+        <div class="item-insight">Cobertura reciente. Tema: Internacional. Fuente: Medio independiente cubano.</div>
+        <a href="https://eltoque.com/noticias-de-la-negociacion-de-donald-trump-con-cuba" class="read-link" target="_blank" rel="noopener">Leer original</a>
+      </div>
+      
+      
+
+      <!-- Additional coverage -->
+      
+
+      <!-- Videos -->
+      
+      <div class="section-label">🎥 Videos relacionados (1)</div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=xNn7AdeUfr0" target="_blank" rel="noopener">Info Martí | Iberia suspenderá vuelos a Cuba</a></div>
+          <div class="video-meta">
+            Martí Noticias
+            <span class="views-badge">1K vistas</span>
+             · hace 6h
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <!-- State coverage (toggle-gated) -->
+      
+
+    </div>
+  </article>
+  
+  
+  
+  
+  
+  
+
+  <article class="topic-card">
+    <div class="topic-header">
+      <div class="topic-name">📌 [Política] Conversando 📍</div>
+      <div class="topic-meta">
+        
+        <span class="badge" style="background:#f0f0f0;color:#555;margin-right:.3rem">Política</span>
+        
+        2 fuentes
+        
+         · 2 diáspora
+        
+      </div>
+    </div>
+    <div class="topic-body">
+
+      
+      <div class="topic-synthesis">Conversando 📍</div>
+      
+
+      <!-- Featured articles -->
+      
+
+      <!-- Additional coverage -->
+      
+
+      <!-- Videos -->
+      
+      <div class="section-label">🎥 Videos relacionados (2)</div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/shorts/FuP00lZkhAg" target="_blank" rel="noopener">Conversando 📍</a></div>
+          <div class="video-meta">
+            El Canal de las Emociones
+            <span class="views-badge">444 vistas</span>
+             · hace 4h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=L34qtbYbNNU" target="_blank" rel="noopener">YOM HASHOAH</a></div>
+          <div class="video-meta">
+            Abraham Rivera
+            <span class="views-badge">216 vistas</span>
+             · hace 8h
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <!-- State coverage (toggle-gated) -->
+      
+
+    </div>
+  </article>
+  
+  
+  
+  
+  
+  
+
+  <article class="topic-card">
+    <div class="topic-header">
+      <div class="topic-name">📌 [Internacional] URGENTE: TRUMP ENVÍA MENSAJE A CUBA Y ASEGURA PUEDEN PASAR POR LA ISL…</div>
+      <div class="topic-meta">
+        
+        <span class="badge" style="background:#f0f0f0;color:#555;margin-right:.3rem">Internacional</span>
+        
+        2 fuentes
+         · 2 independiente
+        
+        
+      </div>
+    </div>
+    <div class="topic-body">
+
+      
+      <div class="topic-synthesis">TRUMP ASEGURA QUE PUEDEN PASAR POR CUBA DESPUÉS DE TERMINAR CON IRÁN, CRECE LA TENSIÓN CON LA ISLA</div>
+      
+
+      <!-- Featured articles -->
+      
+
+      <!-- Additional coverage -->
+      
+
+      <!-- Videos -->
+      
+      <div class="section-label">🎥 Videos relacionados (2)</div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=Pz4-Jk7Kq9c" target="_blank" rel="noopener">URGENTE: TRUMP ENVÍA MENSAJE A CUBA Y ASEGURA PUEDEN PASAR POR LA ISLA DESPUÉS DE TERMINAR CON IRÁN</a></div>
+          <div class="video-meta">
+            Daniel Benítez
+            <span class="views-badge">21K vistas</span>
+             · hace 8h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=fcn7-Vp6UVk" target="_blank" rel="noopener">Por qué la caída de Orbán debilita al trumpismo hoy</a></div>
+          <div class="video-meta">
+            23 y Flagler
+            <span class="views-badge">18K vistas</span>
+             · ayer
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <!-- State coverage (toggle-gated) -->
+      
+
+    </div>
+  </article>
+  
+  
+  
+  
+  
+  
+
+  <article class="topic-card">
+    <div class="topic-header">
+      <div class="topic-name">📌 Alex Otaola en vivo, noticias de Cuba - Hola! Ota-Ola (lunes 13 de ab…</div>
+      <div class="topic-meta">
+        
+        <span class="badge" style="background:#f0f0f0;color:#555;margin-right:.3rem">Cultura</span>
+        
+        1 fuente
+        
+         · 1 diáspora
+        
+      </div>
+    </div>
+    <div class="topic-body">
+
+      
+      <div class="topic-synthesis">Alex Otaola en vivo, noticias de Cuba - Hola! Ota-Ola (lunes 13 de abril del 2026) [TRANSMISIÓN]</div>
+      
+
+      <!-- Featured articles -->
+      
+
+      <!-- Additional coverage -->
+      
+
+      <!-- Videos -->
+      
+      <div class="section-label">🎥 Videos relacionados (1)</div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=qsODZCT-Ykk" target="_blank" rel="noopener">Alex Otaola en vivo, noticias de Cuba - Hola! Ota-Ola (lunes 13 de abril del 2026) [TRANSMISIÓN]</a></div>
+          <div class="video-meta">
+            Cubanos por el Mundo
+            <span class="views-badge">35K vistas</span>
+             · hace 3h
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <!-- State coverage (toggle-gated) -->
+      
+
+    </div>
+  </article>
+  
+  
+  
+  
+  
+  
+
+  <article class="topic-card">
+    <div class="topic-header">
+      <div class="topic-name">📌 Otras noticias: Economía</div>
+      <div class="topic-meta">
+        
+        <span class="badge" style="background:#f0f0f0;color:#555;margin-right:.3rem">Economía</span>
+        
+        6 fuentes
+         · 4 independiente
+         · 2 diáspora
+        
+      </div>
+    </div>
+    <div class="topic-body">
+
+      
+      <div class="topic-synthesis">14ymedio: En el servicentro Acapulco, en La Habana, una empresa despacha combustible comprado en Estados Unidos · 14ymedio: La multinacional ha suspendido sus actividades en Moa ante la falta de combustible, mientras Pekín, primer comprador del mineral, invierte en la modernización de la industria · 14ymedio: Los apagones han acabado con los cines y la heladería Coppelia, en El Vedado; la vida está ahora en los kioscos donde se anuncia: “Aquí tenemos de todo”</div>
+      
+
+      <!-- Featured articles -->
+      
+      <div class="section-label">📰 Destacados</div>
+      
+      <div class="item">
+        <div class="item-title"><a href="https://www.14ymedio.com/cuba/autoridades-cubanas-alquilan-gasolineras-mipymes_1_1125675.html" target="_blank" rel="noopener">Las autoridades cubanas alquilan gasolineras a mipymes privadas</a></div>
+        <div class="item-meta">
+          <span class="badge badge-independiente">independiente</span>
+          14ymedio
+           · hace 8h
+        </div>
+        <div class="item-summary">En el servicentro Acapulco, en La Habana, una empresa despacha combustible comprado en Estados Unidos</div>
+        <div class="item-insight">Tema: Economía. Fuente: Medio independiente cubano.</div>
+        <a href="https://www.14ymedio.com/cuba/autoridades-cubanas-alquilan-gasolineras-mipymes_1_1125675.html" class="read-link" target="_blank" rel="noopener">Leer original</a>
+      </div>
+      
+      <div class="item">
+        <div class="item-title"><a href="https://www.14ymedio.com/cuba/china-sustituye-canadiense-sherritt-principal_1_1125633.html" target="_blank" rel="noopener">China sustituye a la canadiense Sherritt como principal operador en la explotación del níquel en Cuba</a></div>
+        <div class="item-meta">
+          <span class="badge badge-independiente">independiente</span>
+          14ymedio
+           · ayer
+        </div>
+        <div class="item-summary">La multinacional ha suspendido sus actividades en Moa ante la falta de combustible, mientras Pekín, primer comprador del mineral, invierte en la modernización de la industria</div>
+        <div class="item-insight">Tema: Economía. Fuente: Medio independiente cubano.</div>
+        <a href="https://www.14ymedio.com/cuba/china-sustituye-canadiense-sherritt-principal_1_1125633.html" class="read-link" target="_blank" rel="noopener">Leer original</a>
+      </div>
+      
+      <div class="item">
+        <div class="item-title"><a href="https://www.14ymedio.com/cuba/habana-bullicio-iconica-rampa-mudado_1_1125645.html" target="_blank" rel="noopener">En La Habana, el bullicio de la icónica Rampa se ha mudado a la 'candonga' de 100 y Boyeros</a></div>
+        <div class="item-meta">
+          <span class="badge badge-independiente">independiente</span>
+          14ymedio
+           · ayer
+        </div>
+        <div class="item-summary">Los apagones han acabado con los cines y la heladería Coppelia, en El Vedado; la vida está ahora en los kioscos donde se anuncia: “Aquí tenemos de todo”</div>
+        <div class="item-insight">Tema: Economía. Fuente: Medio independiente cubano.</div>
+        <a href="https://www.14ymedio.com/cuba/habana-bullicio-iconica-rampa-mudado_1_1125645.html" class="read-link" target="_blank" rel="noopener">Leer original</a>
+      </div>
+      
+      
+
+      <!-- Additional coverage -->
+      
+
+      <!-- Videos -->
+      
+      <div class="section-label">🎥 Videos relacionados (3)</div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=gnjQsgKodJ8" target="_blank" rel="noopener">LAS NOTICIAS COMO SON</a></div>
+          <div class="video-meta">
+            Martí Noticias
+            <span class="views-badge">3K vistas</span>
+             · hace 7h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=rSI1jRt2xbE" target="_blank" rel="noopener">🇺🇸 ¿Qué significa cerrar el Estrecho de Ormuz?</a></div>
+          <div class="video-meta">
+            Pepe Fuerte
+            <span class="views-badge">977 vistas</span>
+             · hace 3h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=pwvoqTaUXoA" target="_blank" rel="noopener">Cuba exige SECRETO a México sobre ayuda que no llega al pueblo</a></div>
+          <div class="video-meta">
+            Cubanos por el Mundo
+            <span class="views-badge">2K vistas</span>
+             · hace 11h
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <!-- State coverage (toggle-gated) -->
+      
+
+    </div>
+  </article>
+  
+  
+  
+  
+  
+  
+
+  <article class="topic-card">
+    <div class="topic-header">
+      <div class="topic-name">📌 Otras noticias: General</div>
+      <div class="topic-meta">
+        
+        12 fuentes
+         · 7 independiente
+         · 5 diáspora
+        
+      </div>
+    </div>
+    <div class="topic-body">
+
+      
+      <div class="topic-synthesis">14ymedio: Es la primera vez en la historia que la aerolínea española cancela la ruta por causas atribuibles a las condiciones de la Isla, aunque aspira a retomarla en noviembre · 14ymedio: Con palabras altisonantes y referencia a 'Che' Guevara, la CTC llama a “defender el país desde el surco, las fábricas, las aulas, desde cada trinchera de combate” · El Toque: Guía práctica sobre contratos, depósitos y derechos del inquilino.</div>
+      
+
+      <!-- Featured articles -->
+      
+      <div class="section-label">📰 Destacados</div>
+      
+      <div class="item">
+        <div class="item-title"><a href="https://www.14ymedio.com/cuba/iberia-suspende-vuelos-cuba-partir_1_1125665.html" target="_blank" rel="noopener">Iberia suspende todos sus vuelos a Cuba a partir de junio</a></div>
+        <div class="item-meta">
+          <span class="badge badge-independiente">independiente</span>
+          14ymedio
+           · hace 15h
+        </div>
+        <div class="item-summary">Es la primera vez en la historia que la aerolínea española cancela la ruta por causas atribuibles a las condiciones de la Isla, aunque aspira a retomarla en noviembre</div>
+        <div class="item-insight">Fuente: Medio independiente cubano.</div>
+        <a href="https://www.14ymedio.com/cuba/iberia-suspende-vuelos-cuba-partir_1_1125665.html" class="read-link" target="_blank" rel="noopener">Leer original</a>
+      </div>
+      
+      <div class="item">
+        <div class="item-title"><a href="https://www.14ymedio.com/cuba/sindicato-unico-convoca-celebrar-1_1_1125666.html" target="_blank" rel="noopener">El sindicato único convoca a celebrar el 1 de Mayo "asumiendo con racionalidad las restricciones impuestas”</a></div>
+        <div class="item-meta">
+          <span class="badge badge-independiente">independiente</span>
+          14ymedio
+           · hace 16h
+        </div>
+        <div class="item-summary">Con palabras altisonantes y referencia a 'Che' Guevara, la CTC llama a “defender el país desde el surco, las fábricas, las aulas, desde cada trinchera de combate”</div>
+        <div class="item-insight">Fuente: Medio independiente cubano.</div>
+        <a href="https://www.14ymedio.com/cuba/sindicato-unico-convoca-celebrar-1_1_1125666.html" class="read-link" target="_blank" rel="noopener">Leer original</a>
+      </div>
+      
+      <div class="item">
+        <div class="item-title"><a href="https://eltoque.com/no-firmes-un-contrato-de-renta-en-miami-sin-saber-esto" target="_blank" rel="noopener">No firmes un contrato de renta en Miami sin saber esto</a></div>
+        <div class="item-meta">
+          <span class="badge badge-independiente">independiente</span>
+          El Toque
+           · hace 14h
+        </div>
+        <div class="item-summary">Guía práctica sobre contratos, depósitos y derechos del inquilino.</div>
+        <div class="item-insight">Fuente: Medio independiente cubano.</div>
+        <a href="https://eltoque.com/no-firmes-un-contrato-de-renta-en-miami-sin-saber-esto" class="read-link" target="_blank" rel="noopener">Leer original</a>
+      </div>
+      
+      
+
+      <!-- Additional coverage -->
+      
+      <div class="section-label">📄 Más cobertura (1)</div>
+      
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <span class="badge badge-independiente">independiente</span>
+          <a href="https://adncuba.com/es/derechos-humanos/regimen-cubano-cita-pareja-de-jovenes-religiosos" target="_blank" rel="noopener">Régimen cubano cita a pareja de jóvenes religiosos</a>
+        </div>
+        <div class="source-item-meta">ADN Cuba · hace 15h</div>
+      </div>
+      
+      
+      
+
+      <!-- Videos -->
+      
+      <div class="section-label">🎥 Videos relacionados (8)</div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=ZrkDIDeIJD8" target="_blank" rel="noopener">Transición en Cuba: ¿Cambio o resistencia adaptativa? Contesta Carlos M. Rodríguez Arechavaleta</a></div>
+          <div class="video-meta">
+            CiberCuba
+            <span class="views-badge">1K vistas</span>
+             · hace 9h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=rwlVgIRbzFE" target="_blank" rel="noopener">La bola nostra</a></div>
+          <div class="video-meta">
+            Martí Noticias
+            <span class="views-badge">35 vistas</span>
+             · hace 6h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/shorts/Kt9b-46kI2g" target="_blank" rel="noopener">Yo me quedo 👀🤫loca ! 👀 #cubanos #musica #ronquidos</a></div>
+          <div class="video-meta">
+            El Canal de las Emociones
+            <span class="views-badge">699 vistas</span>
+             · hace 4h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=UiJ3fa-72rs" target="_blank" rel="noopener">Detienen a una doctora venezolana que iba junto a su niña a su cita en corte</a></div>
+          <div class="video-meta">
+            Mario Pentón
+            <span class="views-badge">9K vistas</span>
+             · hace 6h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/shorts/3kBrlqEocLI" target="_blank" rel="noopener">El Rey 👑 del Epoxi #cubanos #miami</a></div>
+          <div class="video-meta">
+            El Canal de las Emociones
+            <span class="views-badge">251 vistas</span>
+             · hace 6h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/shorts/pbo8OI5hgkM" target="_blank" rel="noopener">Mi doctor 🧑‍⚕️💚 #cubanos #miami</a></div>
+          <div class="video-meta">
+            El Canal de las Emociones
+            <span class="views-badge">214 vistas</span>
+             · hace 6h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=X_9Ew4KBqgo" target="_blank" rel="noopener">URGENTE: CAMBIO COMPLETO DE RÉGIMEN EN CUBA AHORA, LO QUE PIDE ESTE IMPORTANTE POLÍTICO DE FLORIDA</a></div>
+          <div class="video-meta">
+            Daniel Benítez
+            <span class="views-badge">34K vistas</span>
+             · ayer
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/shorts/JxE0KL8O4G0" target="_blank" rel="noopener">Encuestas en Cuba: La Verdad Detrás de las Misiones Médicas. #shorts</a></div>
+          <div class="video-meta">
+            Juan Manuel Cao
+            <span class="views-badge">9K vistas</span>
+             · ayer
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <!-- State coverage (toggle-gated) -->
+      
+
+    </div>
+  </article>
+  
+  
+  
+  
+  
+  
+
+  <article class="topic-card">
+    <div class="topic-header">
+      <div class="topic-name">📌 Otras noticias: Derechos Humanos</div>
+      <div class="topic-meta">
+        
+        <span class="badge" style="background:#f0f0f0;color:#555;margin-right:.3rem">Derechos Humanos</span>
+        
+        6 fuentes
+         · 4 independiente
+         · 2 diáspora
+        
+      </div>
+    </div>
+    <div class="topic-body">
+
+      
+      <div class="topic-synthesis">El Toque: Un video en el que se denuncia la muerte de un joven recluso cubano por presunta desatención médica se ha vuelto viral en Facebook desde su publicación. Sin embargo, en el post se omite que las imágenes no son… · 14ymedio: Es la tercera muerte violenta de una mujer reportada en apenas 30 horas por las ONG · 14ymedio: La falta de transporte convierte cada viaje en una odisea de horas y dinero en el municipio mayabequense</div>
+      
+
+      <!-- Featured articles -->
+      
+      <div class="section-label">📰 Destacados</div>
+      
+      <div class="item">
+        <div class="item-title"><a href="https://eltoque.com/video-viral-de-un-preso-muerto-en-cuba-es-real-pero-de-2023" target="_blank" rel="noopener">Video viral de un preso muerto en Cuba por desatención médica es real, pero ocurrió en 2023</a></div>
+        <div class="item-meta">
+          <span class="badge badge-independiente">independiente</span>
+          El Toque
+           · hace 6h
+        </div>
+        <div class="item-summary">Un video en el que se denuncia la muerte de un joven recluso cubano por presunta desatención médica se ha vuelto viral en Facebook desde su publicación. Sin embargo, en el post se omite que las imágenes no son…</div>
+        <div class="item-insight">Cobertura reciente. Tema: Derechos Humanos. Fuente: Medio independiente cubano.</div>
+        <a href="https://eltoque.com/video-viral-de-un-preso-muerto-en-cuba-es-real-pero-de-2023" class="read-link" target="_blank" rel="noopener">Leer original</a>
+      </div>
+      
+      <div class="item">
+        <div class="item-title"><a href="https://www.14ymedio.com/cuba/educadora-madre-ninas-nuevo-feminicidio_1_1125684.html" target="_blank" rel="noopener">Una educadora, madre de dos niñas, nuevo feminicidio en Matanzas</a></div>
+        <div class="item-meta">
+          <span class="badge badge-independiente">independiente</span>
+          14ymedio
+           · hace 6h
+        </div>
+        <div class="item-summary">Es la tercera muerte violenta de una mujer reportada en apenas 30 horas por las ONG</div>
+        <div class="item-insight">Cobertura reciente. Tema: Derechos Humanos. Fuente: Medio independiente cubano.</div>
+        <a href="https://www.14ymedio.com/cuba/educadora-madre-ninas-nuevo-feminicidio_1_1125684.html" class="read-link" target="_blank" rel="noopener">Leer original</a>
+      </div>
+      
+      <div class="item">
+        <div class="item-title"><a href="https://www.14ymedio.com/cuba/madruga-pueblo-detenido-parada-omnibus_1_1125628.html" target="_blank" rel="noopener">Madruga, un pueblo detenido en la parada de ómnibus</a></div>
+        <div class="item-meta">
+          <span class="badge badge-independiente">independiente</span>
+          14ymedio
+           · ayer
+        </div>
+        <div class="item-summary">La falta de transporte convierte cada viaje en una odisea de horas y dinero en el municipio mayabequense</div>
+        <div class="item-insight">Tema: Derechos Humanos. Fuente: Medio independiente cubano.</div>
+        <a href="https://www.14ymedio.com/cuba/madruga-pueblo-detenido-parada-omnibus_1_1125628.html" class="read-link" target="_blank" rel="noopener">Leer original</a>
+      </div>
+      
+      
+
+      <!-- Additional coverage -->
+      
+
+      <!-- Videos -->
+      
+      <div class="section-label">🎥 Videos relacionados (3)</div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/shorts/n2Wven_kbe0" target="_blank" rel="noopener">La violencia contra la mujer sigue dejando cifras alarmantes en Cuba</a></div>
+          <div class="video-meta">
+            CiberCuba
+            <span class="views-badge">235 vistas</span>
+             · hace 7h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=xvSxk7z_uqs" target="_blank" rel="noopener">El pedido para expreso político que parece haber estado en un campo de concentración en Cuba</a></div>
+          <div class="video-meta">
+            Rolando Nápoles
+            <span class="views-badge">239 vistas</span>
+             · hace 7h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/shorts/HrTa-VlUduE" target="_blank" rel="noopener">¡Urgente! Golpiza a preso político en Ahuica #shorts</a></div>
+          <div class="video-meta">
+            Juan Manuel Cao
+            <span class="views-badge">2K vistas</span>
+             · ayer
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <!-- State coverage (toggle-gated) -->
+      
+
+    </div>
+  </article>
+  
+  
+  
+  
+  
+  
+
+  <article class="topic-card">
+    <div class="topic-header">
+      <div class="topic-name">📌 Otras noticias: Política</div>
+      <div class="topic-meta">
+        
+        <span class="badge" style="background:#f0f0f0;color:#555;margin-right:.3rem">Política</span>
+        
+        3 fuentes
+         · 3 independiente
+        
+        
+      </div>
+    </div>
+    <div class="topic-body">
+
+      
+      <div class="topic-synthesis">14ymedio: La primera ministra italiana, Giorgia Meloni, calificó de "inaceptables" las palabras del líder estadounidense, sumándose a la ola de reacciones de obispos y aliados republicanos</div>
+      
+
+      <!-- Featured articles -->
+      
+      <div class="section-label">📰 Destacados</div>
+      
+      <div class="item">
+        <div class="item-title"><a href="https://www.14ymedio.com/internacional/presidente-irani-condena-criticas-donald_1_1125671.html" target="_blank" rel="noopener">El presidente iraní condena las críticas de Donald Trump al papa León XIV</a></div>
+        <div class="item-meta">
+          <span class="badge badge-independiente">independiente</span>
+          14ymedio
+           · hace 9h
+        </div>
+        <div class="item-summary">La primera ministra italiana, Giorgia Meloni, calificó de "inaceptables" las palabras del líder estadounidense, sumándose a la ola de reacciones de obispos y aliados republicanos</div>
+        <div class="item-insight">Tema: Política. Fuente: Medio independiente cubano.</div>
+        <a href="https://www.14ymedio.com/internacional/presidente-irani-condena-criticas-donald_1_1125671.html" class="read-link" target="_blank" rel="noopener">Leer original</a>
+      </div>
+      
+      
+
+      <!-- Additional coverage -->
+      
+
+      <!-- Videos -->
+      
+      <div class="section-label">🎥 Videos relacionados (2)</div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=NGJVa7oeRZs" target="_blank" rel="noopener">Elecciones en Perú plantean un escenario incierto</a></div>
+          <div class="video-meta">
+            CiberCuba
+            <span class="views-badge">5 vistas</span>
+             · hace 7h
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-card" style="padding:.5rem 0">
+        <div class="video-info">
+          <div class="video-title"><a href="https://www.youtube.com/watch?v=ea4qRT7xdR4" target="_blank" rel="noopener">Fractura Inminente: Influencers y Seguidores de Trump rompen fila en masa.</a></div>
+          <div class="video-meta">
+            23 y Flagler
+            <span class="views-badge">17K vistas</span>
+             · ayer
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <!-- State coverage (toggle-gated) -->
+      
+
+    </div>
+  </article>
+  
+</div>
+
+<!-- ─────────── TAB: MEDIOS ─────────── -->
+<div id="tab-medios" class="tab-panel" role="tabpanel">
+  
+  
+  
+  <div class="tier-heading tier-independiente">📰 Medios Independientes</div>
+  <p style="font-size:.78rem;color:#aaa;margin:-0.3rem 0 .75rem">Periodismo cubano independiente — operan fuera o al margen del Estado cubano</p>
+  
+  
+  <div class="source-group">
+    <div class="source-group-header collapsible-trigger open" onclick="toggleCollapsible(this)">
+      <div>
+        <span class="source-name">14ymedio</span>
+        <div class="source-desc">Periódico digital fundado por Yoani Sánchez en 2014. Periodismo independiente desde dentro y fuera de Cuba.</div>
+      </div>
+      <span style="white-space:nowrap"><span class="source-count">10 items</span> <span class="chevron">▾</span></span>
+    </div>
+    <div class="source-group-body collapsible-body open">
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.14ymedio.com/cuba/autoridades-cubanas-alquilan-gasolineras-mipymes_1_1125675.html" target="_blank" rel="noopener">Las autoridades cubanas alquilan gasolineras a mipymes privadas</a>
+        </div>
+        <div class="source-item-meta">
+          hace 8h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.14ymedio.com/internacional/presidente-irani-condena-criticas-donald_1_1125671.html" target="_blank" rel="noopener">El presidente iraní condena las críticas de Donald Trump al papa León XIV</a>
+        </div>
+        <div class="source-item-meta">
+          hace 9h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.14ymedio.com/cuba/excarcelado-desnutricion-severa-preso-politico_1_1125667.html" target="_blank" rel="noopener">Excarcelado con desnutrición severa el preso político Alexander Díaz Rodríguez</a>
+        </div>
+        <div class="source-item-meta">
+          hace 12h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.14ymedio.com/cuba/iberia-suspende-vuelos-cuba-partir_1_1125665.html" target="_blank" rel="noopener">Iberia suspende todos sus vuelos a Cuba a partir de junio</a>
+        </div>
+        <div class="source-item-meta">
+          hace 15h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.14ymedio.com/cuba/sindicato-unico-convoca-celebrar-1_1_1125666.html" target="_blank" rel="noopener">El sindicato único convoca a celebrar el 1 de Mayo "asumiendo con racionalidad las restricciones impuestas”</a>
+        </div>
+        <div class="source-item-meta">
+          hace 16h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.14ymedio.com/cuba/educadora-madre-ninas-nuevo-feminicidio_1_1125684.html" target="_blank" rel="noopener">Una educadora, madre de dos niñas, nuevo feminicidio en Matanzas</a>
+        </div>
+        <div class="source-item-meta">
+          hace 6h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.14ymedio.com/cuba/china-sustituye-canadiense-sherritt-principal_1_1125633.html" target="_blank" rel="noopener">China sustituye a la canadiense Sherritt como principal operador en la explotación del níquel en Cuba</a>
+        </div>
+        <div class="source-item-meta">
+          ayer
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.14ymedio.com/cuba/habana-bullicio-iconica-rampa-mudado_1_1125645.html" target="_blank" rel="noopener">En La Habana, el bullicio de la icónica Rampa se ha mudado a la 'candonga' de 100 y Boyeros</a>
+        </div>
+        <div class="source-item-meta">
+          ayer
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.14ymedio.com/cuba/madruga-pueblo-detenido-parada-omnibus_1_1125628.html" target="_blank" rel="noopener">Madruga, un pueblo detenido en la parada de ómnibus</a>
+        </div>
+        <div class="source-item-meta">
+          ayer
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.14ymedio.com/deportes/cuba-10-plazas-juegos-centroamericanos_1_1125680.html" target="_blank" rel="noopener">Cuba consigue otras 10 plazas para los Juegos Centroamericanos y del Caribe</a>
+        </div>
+        <div class="source-item-meta">
+          hace 7h
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="source-group">
+    <div class="source-group-header collapsible-trigger open" onclick="toggleCollapsible(this)">
+      <div>
+        <span class="source-name">23 y Flagler</span>
+        <div class="source-desc">Canal de análisis político y noticias cubanas conducido por periodistas independientes desde Miami.</div>
+      </div>
+      <span style="white-space:nowrap"><span class="source-count">5 items</span> <span class="chevron">▾</span></span>
+    </div>
+    <div class="source-group-body collapsible-body open">
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=LNGfpNz6OPM" target="_blank" rel="noopener">Trump cede ante la presión: Por qué borró su post de "Jesucristo"</a>
+        </div>
+        <div class="source-item-meta">
+          hace 7h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=kGIzPAuBrxM" target="_blank" rel="noopener">El Papa responde sin miedo al ataque de Trump</a>
+        </div>
+        <div class="source-item-meta">
+          hace 13h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=ej2uf290RNY" target="_blank" rel="noopener">El efecto bumerán de Trump: Cómo su aventura en Irán lo tiene en jaque.</a>
+        </div>
+        <div class="source-item-meta">
+          ayer
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=ea4qRT7xdR4" target="_blank" rel="noopener">Fractura Inminente: Influencers y Seguidores de Trump rompen fila en masa.</a>
+        </div>
+        <div class="source-item-meta">
+          ayer
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=fcn7-Vp6UVk" target="_blank" rel="noopener">Por qué la caída de Orbán debilita al trumpismo hoy</a>
+        </div>
+        <div class="source-item-meta">
+          ayer
+           · 🎥 video
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="source-group">
+    <div class="source-group-header collapsible-trigger open" onclick="toggleCollapsible(this)">
+      <div>
+        <span class="source-name">ADN Cuba</span>
+        <div class="source-desc">Portal de noticias independiente sobre Cuba con amplia cobertura de actualidad nacional e internacional.</div>
+      </div>
+      <span style="white-space:nowrap"><span class="source-count">1 item</span> <span class="chevron">▾</span></span>
+    </div>
+    <div class="source-group-body collapsible-body open">
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://adncuba.com/es/derechos-humanos/regimen-cubano-cita-pareja-de-jovenes-religiosos" target="_blank" rel="noopener">Régimen cubano cita a pareja de jóvenes religiosos</a>
+        </div>
+        <div class="source-item-meta">
+          hace 15h
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="source-group">
+    <div class="source-group-header collapsible-trigger open" onclick="toggleCollapsible(this)">
+      <div>
+        <span class="source-name">CiberCuba</span>
+        <div class="source-desc">Medio digital independiente fundado en 2015. Noticias, análisis y reportajes sobre Cuba desde España.</div>
+      </div>
+      <span style="white-space:nowrap"><span class="source-count">5 items</span> <span class="chevron">▾</span></span>
+    </div>
+    <div class="source-group-body collapsible-body open">
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=ZrkDIDeIJD8" target="_blank" rel="noopener">Transición en Cuba: ¿Cambio o resistencia adaptativa? Contesta Carlos M. Rodríguez Arechavaleta</a>
+        </div>
+        <div class="source-item-meta">
+          hace 9h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/shorts/M7y_v43zKkA" target="_blank" rel="noopener">Las condiciones en las cárceles cubanas vuelven a generar indignación</a>
+        </div>
+        <div class="source-item-meta">
+          hace 6h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/shorts/n2Wven_kbe0" target="_blank" rel="noopener">La violencia contra la mujer sigue dejando cifras alarmantes en Cuba</a>
+        </div>
+        <div class="source-item-meta">
+          hace 7h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=72jW3GrZPnU" target="_blank" rel="noopener">El modelo económico cubano vuelve al centro del debate tras nuevas declaraciones oficiales</a>
+        </div>
+        <div class="source-item-meta">
+          hace 6h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=NGJVa7oeRZs" target="_blank" rel="noopener">Elecciones en Perú plantean un escenario incierto</a>
+        </div>
+        <div class="source-item-meta">
+          hace 7h
+           · 🎥 video
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="source-group">
+    <div class="source-group-header collapsible-trigger open" onclick="toggleCollapsible(this)">
+      <div>
+        <span class="source-name">Cubanet</span>
+        <div class="source-desc">ONG de periodismo independiente fundada en 1994. Red de corresponsales dentro y fuera de Cuba.</div>
+      </div>
+      <span style="white-space:nowrap"><span class="source-count">10 items</span> <span class="chevron">▾</span></span>
+    </div>
+    <div class="source-group-body collapsible-body open">
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.cubanet.org/archivan-denuncia-contra-anna-bensi-y-su-madre-pero-las-amenazan-con-llevarlas-a-prision/" target="_blank" rel="noopener">Archivan denuncia contra Anna Bensi y su madre, pero las amenazan con llevarlas a prisión</a>
+        </div>
+        <div class="source-item-meta">
+          hace 4h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.cubanet.org/cerveceria-polar-la-industria-que-el-comunismo-devasto/" target="_blank" rel="noopener">Cervecería Polar: la industria que el comunismo devastó</a>
+        </div>
+        <div class="source-item-meta">
+          hace 6h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.cubanet.org/un-violador-esta-en-la-calle-mientras-un-nino-continua-en-prision/" target="_blank" rel="noopener">Un violador está en la calle mientras un niño continúa en prisión</a>
+        </div>
+        <div class="source-item-meta">
+          hace 7h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.cubanet.org/como-de-un-campo-de-concentracion-asi-salio-de-prision-un-manifestante-cubano-del-11j/" target="_blank" rel="noopener">Como de un campo de concentración: así salió de prisión un manifestante cubano del 11J</a>
+        </div>
+        <div class="source-item-meta">
+          hace 11h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.cubanet.org/es-posible-que-hagamos-una-parada-en-cuba-trump-pone-a-la-isla-en-la-mira-tras-iran/" target="_blank" rel="noopener">“Es posible que hagamos una parada en Cuba”: Trump pone a la Isla en la mira tras Irán</a>
+        </div>
+        <div class="source-item-meta">
+          hace 9h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.cubanet.org/dictador-titere-gimenez-carga-contra-diaz-canel-tras-su-entrevista-con-nbc/" target="_blank" rel="noopener">“Dictador títere”: Giménez carga contra Díaz-Canel tras su entrevista con NBC</a>
+        </div>
+        <div class="source-item-meta">
+          hace 12h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.cubanet.org/aerolinea-iberia-suspendera-vuelos-directos-entre-madrid-y-cuba/" target="_blank" rel="noopener">Aerolínea Iberia suspenderá vuelos directos entre Madrid y Cuba</a>
+        </div>
+        <div class="source-item-meta">
+          hace 14h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.cubanet.org/persona-insuperable-artistas-cubanos-inundan-las-redes-con-despedidas-a-la-actriz-zelma-morales/" target="_blank" rel="noopener">“Persona insuperable”: artistas cubanos inundan las redes con despedidas a la actriz Zelma Morales</a>
+        </div>
+        <div class="source-item-meta">
+          hace 15h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.cubanet.org/el-suplicio-del-efectivo-en-cuba-como-si-el-dinero-no-fuera-tuyo/" target="_blank" rel="noopener">El suplicio del efectivo en Cuba: “Como si el dinero no fuera tuyo”</a>
+        </div>
+        <div class="source-item-meta">
+          hace 16h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.cubanet.org/averia-deja-sin-agua-a-familias-en-la-habana-sobreviven-con-un-salidero/" target="_blank" rel="noopener">Avería deja sin agua a familias en La Habana: sobreviven con un salidero</a>
+        </div>
+        <div class="source-item-meta">
+          hace 10h
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="source-group">
+    <div class="source-group-header collapsible-trigger open" onclick="toggleCollapsible(this)">
+      <div>
+        <span class="source-name">Daniel Benítez</span>
+        <div class="source-desc">Periodista independiente cubano. Reportajes sobre Cuba desde el exterior.</div>
+      </div>
+      <span style="white-space:nowrap"><span class="source-count">5 items</span> <span class="chevron">▾</span></span>
+    </div>
+    <div class="source-group-body collapsible-body open">
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=hwuIRYXM6J8" target="_blank" rel="noopener">¿Presos políticos en Cuba? La respuesta del dictador cubano que demuestra el cinismo del régimen</a>
+        </div>
+        <div class="source-item-meta">
+          hace 3h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=AuIQsXIHH9o" target="_blank" rel="noopener">Cambio total del régimen en Cuba, lo que apoya quien podría ser el próximo gobernador de Florida</a>
+        </div>
+        <div class="source-item-meta">
+          hace 5h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=-UIiYW_7pVs" target="_blank" rel="noopener">Podríamos pasar por Cuba, ha sido administrada horriblemente" dijo Trump en mensaje a la dictadura</a>
+        </div>
+        <div class="source-item-meta">
+          hace 6h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=Pz4-Jk7Kq9c" target="_blank" rel="noopener">URGENTE: TRUMP ENVÍA MENSAJE A CUBA Y ASEGURA PUEDEN PASAR POR LA ISLA DESPUÉS DE TERMINAR CON IRÁN</a>
+        </div>
+        <div class="source-item-meta">
+          hace 8h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=X_9Ew4KBqgo" target="_blank" rel="noopener">URGENTE: CAMBIO COMPLETO DE RÉGIMEN EN CUBA AHORA, LO QUE PIDE ESTE IMPORTANTE POLÍTICO DE FLORIDA</a>
+        </div>
+        <div class="source-item-meta">
+          ayer
+           · 🎥 video
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="source-group">
+    <div class="source-group-header collapsible-trigger open" onclick="toggleCollapsible(this)">
+      <div>
+        <span class="source-name">El Toque</span>
+        <div class="source-desc">Medio digital independiente con énfasis en economía, datos y periodismo de soluciones sobre Cuba.</div>
+      </div>
+      <span style="white-space:nowrap"><span class="source-count">6 items</span> <span class="chevron">▾</span></span>
+    </div>
+    <div class="source-group-body collapsible-body open">
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://eltoque.com/noticias-de-la-negociacion-de-donald-trump-con-cuba" target="_blank" rel="noopener">Noticias de la negociación de Donald Trump con Cuba</a>
+        </div>
+        <div class="source-item-meta">
+          hace 5h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://eltoque.com/video-viral-de-un-preso-muerto-en-cuba-es-real-pero-de-2023" target="_blank" rel="noopener">Video viral de un preso muerto en Cuba por desatención médica es real, pero ocurrió en 2023</a>
+        </div>
+        <div class="source-item-meta">
+          hace 6h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://eltoque.com/muertes-por-escasez-de-medicamentos-recrudecen-la-crisis-sanitaria-en-cuba" target="_blank" rel="noopener">Muertes por escasez de medicamentos recrudecen la crisis sanitaria en Cuba</a>
+        </div>
+        <div class="source-item-meta">
+          hace 4h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://eltoque.com/no-firmes-un-contrato-de-renta-en-miami-sin-saber-esto" target="_blank" rel="noopener">No firmes un contrato de renta en Miami sin saber esto</a>
+        </div>
+        <div class="source-item-meta">
+          hace 14h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://eltoque.com/asilo-en-brasil-para-cubanos-lo-que-si-es-posible-y-lo-que-no-te-dicen" target="_blank" rel="noopener">Asilo en Brasil para cubanos: lo que sí es posible y lo que no te dicen</a>
+        </div>
+        <div class="source-item-meta">
+          hace 17h
+          
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://eltoque.com/cepeda-eterno-merito-personal-o-sintoma-del-beisbol-cubano-actual" target="_blank" rel="noopener">Cepeda eterno: ¿mérito personal o síntoma del béisbol cubano actual?</a>
+        </div>
+        <div class="source-item-meta">
+          ayer
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="source-group">
+    <div class="source-group-header collapsible-trigger open" onclick="toggleCollapsible(this)">
+      <div>
+        <span class="source-name">Martí Noticias</span>
+        <div class="source-desc">Servicio noticioso financiado por el Congreso de EEUU. Cubre Cuba con periodismo de investigación desde Miami.</div>
+      </div>
+      <span style="white-space:nowrap"><span class="source-count">5 items</span> <span class="chevron">▾</span></span>
+    </div>
+    <div class="source-group-body collapsible-body open">
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/shorts/-BpisXCUq28" target="_blank" rel="noopener">Análisis: Díaz-Canel cometió un grave error en entrevista con NBC. En Washington observan</a>
+        </div>
+        <div class="source-item-meta">
+          hace 7h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=gnjQsgKodJ8" target="_blank" rel="noopener">LAS NOTICIAS COMO SON</a>
+        </div>
+        <div class="source-item-meta">
+          hace 7h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=jhkUa07Ml1c" target="_blank" rel="noopener">CUBA AL DIA</a>
+        </div>
+        <div class="source-item-meta">
+          hace 7h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=xNn7AdeUfr0" target="_blank" rel="noopener">Info Martí | Iberia suspenderá vuelos a Cuba</a>
+        </div>
+        <div class="source-item-meta">
+          hace 6h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=rwlVgIRbzFE" target="_blank" rel="noopener">La bola nostra</a>
+        </div>
+        <div class="source-item-meta">
+          hace 6h
+           · 🎥 video
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <div class="tier-heading tier-diaspora">🌎 Voces de la Diáspora</div>
+  <p style="font-size:.78rem;color:#aaa;margin:-0.3rem 0 .75rem">Creadores y comentaristas cubanos en el exterior — opinión, análisis y testimonios</p>
+  
+  
+  <div class="source-group">
+    <div class="source-group-header collapsible-trigger open" onclick="toggleCollapsible(this)">
+      <div>
+        <span class="source-name">Abraham Rivera</span>
+        <div class="source-desc">Comentarista cubano. Análisis de la actualidad política y social cubana.</div>
+      </div>
+      <span style="white-space:nowrap"><span class="source-count">1 item</span> <span class="chevron">▾</span></span>
+    </div>
+    <div class="source-group-body collapsible-body open">
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=L34qtbYbNNU" target="_blank" rel="noopener">YOM HASHOAH</a>
+        </div>
+        <div class="source-item-meta">
+          hace 8h
+           · 🎥 video
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="source-group">
+    <div class="source-group-header collapsible-trigger open" onclick="toggleCollapsible(this)">
+      <div>
+        <span class="source-name">Carlitos Madrid</span>
+        <div class="source-desc">Creador de contenido cubano-americano. Noticias y opinión sobre la actualidad cubana.</div>
+      </div>
+      <span style="white-space:nowrap"><span class="source-count">1 item</span> <span class="chevron">▾</span></span>
+    </div>
+    <div class="source-group-body collapsible-body open">
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=nahCW0MI35I" target="_blank" rel="noopener">DICTADOR CUBANO DÍAZ CANEL LLORA EN LA ONU</a>
+        </div>
+        <div class="source-item-meta">
+          ayer
+           · 🎥 video
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="source-group">
+    <div class="source-group-header collapsible-trigger open" onclick="toggleCollapsible(this)">
+      <div>
+        <span class="source-name">Cubanos por el Mundo</span>
+        <div class="source-desc">Cobertura de la comunidad cubana en el exterior. Testimonios, migración y vida en la diáspora.</div>
+      </div>
+      <span style="white-space:nowrap"><span class="source-count">5 items</span> <span class="chevron">▾</span></span>
+    </div>
+    <div class="source-group-body collapsible-body open">
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=qsODZCT-Ykk" target="_blank" rel="noopener">Alex Otaola en vivo, noticias de Cuba - Hola! Ota-Ola (lunes 13 de abril del 2026) [TRANSMISIÓN]</a>
+        </div>
+        <div class="source-item-meta">
+          hace 3h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=pwvoqTaUXoA" target="_blank" rel="noopener">Cuba exige SECRETO a México sobre ayuda que no llega al pueblo</a>
+        </div>
+        <div class="source-item-meta">
+          hace 11h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=lu1pzDfpJ-Q" target="_blank" rel="noopener">Díaz-Canel MIENTE en Ginebra sobre crisis cubana y bloqueo energético</a>
+        </div>
+        <div class="source-item-meta">
+          hace 14h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=aeSTgTgkufs" target="_blank" rel="noopener">Díaz-Canel pierde el control en NBC al ser cuestionado en vivo</a>
+        </div>
+        <div class="source-item-meta">
+          ayer
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=MJtrcWtYlGw" target="_blank" rel="noopener">Hermana de la activista cubana, Anna Bensi revela cómo el G2 la intimidó en Cuba</a>
+        </div>
+        <div class="source-item-meta">
+          ayer
+           · 🎥 video
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="source-group">
+    <div class="source-group-header collapsible-trigger open" onclick="toggleCollapsible(this)">
+      <div>
+        <span class="source-name">El Canal de las Emociones</span>
+        <div class="source-desc">Canal de la diáspora cubana con testimonios personales y actualidad desde la comunidad.</div>
+      </div>
+      <span style="white-space:nowrap"><span class="source-count">4 items</span> <span class="chevron">▾</span></span>
+    </div>
+    <div class="source-group-body collapsible-body open">
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/shorts/FuP00lZkhAg" target="_blank" rel="noopener">Conversando 📍</a>
+        </div>
+        <div class="source-item-meta">
+          hace 4h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/shorts/Kt9b-46kI2g" target="_blank" rel="noopener">Yo me quedo 👀🤫loca ! 👀 #cubanos #musica #ronquidos</a>
+        </div>
+        <div class="source-item-meta">
+          hace 4h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/shorts/3kBrlqEocLI" target="_blank" rel="noopener">El Rey 👑 del Epoxi #cubanos #miami</a>
+        </div>
+        <div class="source-item-meta">
+          hace 6h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/shorts/pbo8OI5hgkM" target="_blank" rel="noopener">Mi doctor 🧑‍⚕️💚 #cubanos #miami</a>
+        </div>
+        <div class="source-item-meta">
+          hace 6h
+           · 🎥 video
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="source-group">
+    <div class="source-group-header collapsible-trigger open" onclick="toggleCollapsible(this)">
+      <div>
+        <span class="source-name">Juan Manuel Cao</span>
+        <div class="source-desc">Periodista y comentarista cubano-americano. Entrevistas y análisis político desde Miami.</div>
+      </div>
+      <span style="white-space:nowrap"><span class="source-count">4 items</span> <span class="chevron">▾</span></span>
+    </div>
+    <div class="source-group-body collapsible-body open">
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=_ir0OfzA8z4" target="_blank" rel="noopener">TRUMP ENVIA NUEVO MENSAJE A LOS EXILIADOS CUBANOS | Juan Manuel Cao Live | Lunes 13 de Abril 2026</a>
+        </div>
+        <div class="source-item-meta">
+          hace un momento
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=U0SsY3NMkPc" target="_blank" rel="noopener">Juan Manuel Cao Live | Lunes 13 de Abril 2026</a>
+        </div>
+        <div class="source-item-meta">
+          hace 1h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/shorts/JxE0KL8O4G0" target="_blank" rel="noopener">Encuestas en Cuba: La Verdad Detrás de las Misiones Médicas. #shorts</a>
+        </div>
+        <div class="source-item-meta">
+          ayer
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/shorts/HrTa-VlUduE" target="_blank" rel="noopener">¡Urgente! Golpiza a preso político en Ahuica #shorts</a>
+        </div>
+        <div class="source-item-meta">
+          ayer
+           · 🎥 video
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="source-group">
+    <div class="source-group-header collapsible-trigger open" onclick="toggleCollapsible(this)">
+      <div>
+        <span class="source-name">Mario Pentón</span>
+        <div class="source-desc">Periodista cubano-americano, ex-Martí Noticias. Reportajes e investigaciones sobre Cuba.</div>
+      </div>
+      <span style="white-space:nowrap"><span class="source-count">4 items</span> <span class="chevron">▾</span></span>
+    </div>
+    <div class="source-group-body collapsible-body open">
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=weknGyaqOrA" target="_blank" rel="noopener">Régimen cubano y sus aliados preparan una trampa con ciertos presos políticos</a>
+        </div>
+        <div class="source-item-meta">
+          hace 5h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=zX3G3EL6zgk" target="_blank" rel="noopener">Joven influencer Anna Bensi revela detalles del interrogatorio y amenazas a las que la sometieron</a>
+        </div>
+        <div class="source-item-meta">
+          hace 3h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/shorts/YnK7TAZAae8" target="_blank" rel="noopener">#ÚltimaHora | Trump dice que EEUU pasará por #Cuba cuando termine con Irán</a>
+        </div>
+        <div class="source-item-meta">
+          hace 9h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=UiJ3fa-72rs" target="_blank" rel="noopener">Detienen a una doctora venezolana que iba junto a su niña a su cita en corte</a>
+        </div>
+        <div class="source-item-meta">
+          hace 6h
+           · 🎥 video
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="source-group">
+    <div class="source-group-header collapsible-trigger open" onclick="toggleCollapsible(this)">
+      <div>
+        <span class="source-name">Pepe Fuerte</span>
+        <div class="source-desc">Análisis y comentario político sobre Cuba y Venezuela desde la perspectiva de la diáspora.</div>
+      </div>
+      <span style="white-space:nowrap"><span class="source-count">1 item</span> <span class="chevron">▾</span></span>
+    </div>
+    <div class="source-group-body collapsible-body open">
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=rSI1jRt2xbE" target="_blank" rel="noopener">🇺🇸 ¿Qué significa cerrar el Estrecho de Ormuz?</a>
+        </div>
+        <div class="source-item-meta">
+          hace 3h
+           · 🎥 video
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="source-group">
+    <div class="source-group-header collapsible-trigger open" onclick="toggleCollapsible(this)">
+      <div>
+        <span class="source-name">Rolando Nápoles</span>
+        <div class="source-desc">Periodista y analista cubano desde el exilio. Política, economía y sociedad cubana.</div>
+      </div>
+      <span style="white-space:nowrap"><span class="source-count">3 items</span> <span class="chevron">▾</span></span>
+    </div>
+    <div class="source-group-body collapsible-body open">
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=k76pusfF80o" target="_blank" rel="noopener">💥 “¡SE ACERCA EL TURNO DE CUBA!”</a>
+        </div>
+        <div class="source-item-meta">
+          hace 4h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/watch?v=xvSxk7z_uqs" target="_blank" rel="noopener">El pedido para expreso político que parece haber estado en un campo de concentración en Cuba</a>
+        </div>
+        <div class="source-item-meta">
+          hace 7h
+           · 🎥 video
+        </div>
+      </div>
+      
+      <div class="source-item">
+        <div class="source-item-title">
+          <a href="https://www.youtube.com/shorts/4brJlmRUDu8" target="_blank" rel="noopener">La increíble amenaza de la Seguridad del Estado en #Cuba a hermana de influencer Anna Bensi</a>
+        </div>
+        <div class="source-item-meta">
+          ayer
+           · 🎥 video
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+
+  <!-- Estatal (toggle-gated) -->
+  
+  
+
+  
+</div>
+
+<!-- ─────────── TAB: VIDEOS ─────────── -->
+<div id="tab-videos" class="tab-panel" role="tabpanel">
+  
+  
+  <div class="section-label" style="margin-top:.25rem">🔥 Más relevantes hoy</div>
+  
+  <div class="video-card">
+    <div class="video-thumb">
+      
+      <img src="https://i4.ytimg.com/vi/weknGyaqOrA/hqdefault.jpg" alt="" loading="lazy">
+      
+    </div>
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=weknGyaqOrA" target="_blank" rel="noopener">Régimen cubano y sus aliados preparan una trampa con ciertos presos políticos</a></div>
+      <div class="video-meta">
+        <span class="badge badge-diaspora">diaspora</span>
+        Mario Pentón
+         · <span class="views-badge">24K vistas</span>
+         · hace 5h
+      </div>
+      <div class="video-summary">Régimen cubano y sus aliados preparan una trampa con ciertos presos políticos</div>
+      <div class="item-insight">Cobertura reciente. Tema: Derechos Humanos. Fuente: Medio de la diáspora cubana.</div>
+      <a href="https://www.youtube.com/watch?v=weknGyaqOrA" class="read-link" target="_blank" rel="noopener">Ver video</a>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-thumb">
+      
+      <img src="https://i4.ytimg.com/vi/_ir0OfzA8z4/hqdefault.jpg" alt="" loading="lazy">
+      
+    </div>
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=_ir0OfzA8z4" target="_blank" rel="noopener">TRUMP ENVIA NUEVO MENSAJE A LOS EXILIADOS CUBANOS | Juan Manuel Cao Live | Lunes 13 de Abril 2026</a></div>
+      <div class="video-meta">
+        <span class="badge badge-diaspora">diaspora</span>
+        Juan Manuel Cao
+         · <span class="views-badge">17K vistas</span>
+         · hace un momento
+      </div>
+      <div class="video-summary">TRUMP ENVIA NUEVO MENSAJE A LOS EXILIADOS CUBANOS | Juan Manuel Cao Live | Lunes 13 de Abril 2026</div>
+      <div class="item-insight">Publicado hace menos de 3 horas. Tema: Política. Fuente: Medio de la diáspora cubana.</div>
+      <a href="https://www.youtube.com/watch?v=_ir0OfzA8z4" class="read-link" target="_blank" rel="noopener">Ver video</a>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-thumb">
+      
+      <img src="https://i1.ytimg.com/vi/LNGfpNz6OPM/hqdefault.jpg" alt="" loading="lazy">
+      
+    </div>
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=LNGfpNz6OPM" target="_blank" rel="noopener">Trump cede ante la presión: Por qué borró su post de "Jesucristo"</a></div>
+      <div class="video-meta">
+        <span class="badge badge-independiente">independiente</span>
+        23 y Flagler
+         · <span class="views-badge">48K vistas</span>
+         · hace 7h
+      </div>
+      <div class="video-summary">Trump cede ante la presión: Por qué borró su post de "Jesucristo"</div>
+      <div class="item-insight">Cobertura reciente. Tema: Política. Fuente: Medio independiente cubano.</div>
+      <a href="https://www.youtube.com/watch?v=LNGfpNz6OPM" class="read-link" target="_blank" rel="noopener">Ver video</a>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-thumb">
+      
+      <img src="https://i2.ytimg.com/vi/-BpisXCUq28/hqdefault.jpg" alt="" loading="lazy">
+      
+    </div>
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/shorts/-BpisXCUq28" target="_blank" rel="noopener">Análisis: Díaz-Canel cometió un grave error en entrevista con NBC. En Washington observan</a></div>
+      <div class="video-meta">
+        <span class="badge badge-independiente">independiente</span>
+        Martí Noticias
+         · <span class="views-badge">7K vistas</span>
+         · hace 7h
+      </div>
+      <div class="video-summary">Análisis: Díaz-Canel cometió un grave error en entrevista con NBC. En Washington observan</div>
+      <div class="item-insight">Cobertura reciente. Tema: Política. Fuente: Medio independiente cubano.</div>
+      <a href="https://www.youtube.com/shorts/-BpisXCUq28" class="read-link" target="_blank" rel="noopener">Ver video</a>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-thumb">
+      
+      <img src="https://i1.ytimg.com/vi/hwuIRYXM6J8/hqdefault.jpg" alt="" loading="lazy">
+      
+    </div>
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=hwuIRYXM6J8" target="_blank" rel="noopener">¿Presos políticos en Cuba? La respuesta del dictador cubano que demuestra el cinismo del régimen</a></div>
+      <div class="video-meta">
+        <span class="badge badge-independiente">independiente</span>
+        Daniel Benítez
+         · <span class="views-badge">228 vistas</span>
+         · hace 3h
+      </div>
+      <div class="video-summary">¿Presos políticos en Cuba? La respuesta del dictador cubano que demuestra el cinismo del régimen</div>
+      <div class="item-insight">Cobertura reciente. Tema: Política. Fuente: Medio independiente cubano.</div>
+      <a href="https://www.youtube.com/watch?v=hwuIRYXM6J8" class="read-link" target="_blank" rel="noopener">Ver video</a>
+    </div>
+  </div>
+  
+
+  
+  <div class="section-label">📺 Todos los videos (43)</div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=zX3G3EL6zgk" target="_blank" rel="noopener">Joven influencer Anna Bensi revela detalles del interrogatorio y amenazas a las que la sometieron</a></div>
+      <div class="video-meta">
+        Mario Pentón
+         · <span class="views-badge">6K vistas</span>
+         · hace 3h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=gnjQsgKodJ8" target="_blank" rel="noopener">LAS NOTICIAS COMO SON</a></div>
+      <div class="video-meta">
+        Martí Noticias
+         · <span class="views-badge">3K vistas</span>
+         · hace 7h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=rSI1jRt2xbE" target="_blank" rel="noopener">🇺🇸 ¿Qué significa cerrar el Estrecho de Ormuz?</a></div>
+      <div class="video-meta">
+        Pepe Fuerte
+         · <span class="views-badge">977 vistas</span>
+         · hace 3h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=k76pusfF80o" target="_blank" rel="noopener">💥 “¡SE ACERCA EL TURNO DE CUBA!”</a></div>
+      <div class="video-meta">
+        Rolando Nápoles
+         · <span class="views-badge">2K vistas</span>
+         · hace 4h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=AuIQsXIHH9o" target="_blank" rel="noopener">Cambio total del régimen en Cuba, lo que apoya quien podría ser el próximo gobernador de Florida</a></div>
+      <div class="video-meta">
+        Daniel Benítez
+         · <span class="views-badge">2K vistas</span>
+         · hace 5h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=ZrkDIDeIJD8" target="_blank" rel="noopener">Transición en Cuba: ¿Cambio o resistencia adaptativa? Contesta Carlos M. Rodríguez Arechavaleta</a></div>
+      <div class="video-meta">
+        CiberCuba
+         · <span class="views-badge">1K vistas</span>
+         · hace 9h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=jhkUa07Ml1c" target="_blank" rel="noopener">CUBA AL DIA</a></div>
+      <div class="video-meta">
+        Martí Noticias
+         · <span class="views-badge">1K vistas</span>
+         · hace 7h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/shorts/M7y_v43zKkA" target="_blank" rel="noopener">Las condiciones en las cárceles cubanas vuelven a generar indignación</a></div>
+      <div class="video-meta">
+        CiberCuba
+         · <span class="views-badge">875 vistas</span>
+         · hace 6h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=qsODZCT-Ykk" target="_blank" rel="noopener">Alex Otaola en vivo, noticias de Cuba - Hola! Ota-Ola (lunes 13 de abril del 2026) [TRANSMISIÓN]</a></div>
+      <div class="video-meta">
+        Cubanos por el Mundo
+         · <span class="views-badge">35K vistas</span>
+         · hace 3h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=pwvoqTaUXoA" target="_blank" rel="noopener">Cuba exige SECRETO a México sobre ayuda que no llega al pueblo</a></div>
+      <div class="video-meta">
+        Cubanos por el Mundo
+         · <span class="views-badge">2K vistas</span>
+         · hace 11h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/shorts/n2Wven_kbe0" target="_blank" rel="noopener">La violencia contra la mujer sigue dejando cifras alarmantes en Cuba</a></div>
+      <div class="video-meta">
+        CiberCuba
+         · <span class="views-badge">235 vistas</span>
+         · hace 7h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=-UIiYW_7pVs" target="_blank" rel="noopener">Podríamos pasar por Cuba, ha sido administrada horriblemente" dijo Trump en mensaje a la dictadura</a></div>
+      <div class="video-meta">
+        Daniel Benítez
+         · <span class="views-badge">6K vistas</span>
+         · hace 6h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/shorts/FuP00lZkhAg" target="_blank" rel="noopener">Conversando 📍</a></div>
+      <div class="video-meta">
+        El Canal de las Emociones
+         · <span class="views-badge">444 vistas</span>
+         · hace 4h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=xNn7AdeUfr0" target="_blank" rel="noopener">Info Martí | Iberia suspenderá vuelos a Cuba</a></div>
+      <div class="video-meta">
+        Martí Noticias
+         · <span class="views-badge">1K vistas</span>
+         · hace 6h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=72jW3GrZPnU" target="_blank" rel="noopener">El modelo económico cubano vuelve al centro del debate tras nuevas declaraciones oficiales</a></div>
+      <div class="video-meta">
+        CiberCuba
+         · <span class="views-badge">40 vistas</span>
+         · hace 6h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=rwlVgIRbzFE" target="_blank" rel="noopener">La bola nostra</a></div>
+      <div class="video-meta">
+        Martí Noticias
+         · <span class="views-badge">35 vistas</span>
+         · hace 6h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=kGIzPAuBrxM" target="_blank" rel="noopener">El Papa responde sin miedo al ataque de Trump</a></div>
+      <div class="video-meta">
+        23 y Flagler
+         · <span class="views-badge">16K vistas</span>
+         · hace 13h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/shorts/YnK7TAZAae8" target="_blank" rel="noopener">#ÚltimaHora | Trump dice que EEUU pasará por #Cuba cuando termine con Irán</a></div>
+      <div class="video-meta">
+        Mario Pentón
+         · <span class="views-badge">78K vistas</span>
+         · hace 9h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=xvSxk7z_uqs" target="_blank" rel="noopener">El pedido para expreso político que parece haber estado en un campo de concentración en Cuba</a></div>
+      <div class="video-meta">
+        Rolando Nápoles
+         · <span class="views-badge">239 vistas</span>
+         · hace 7h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/shorts/Kt9b-46kI2g" target="_blank" rel="noopener">Yo me quedo 👀🤫loca ! 👀 #cubanos #musica #ronquidos</a></div>
+      <div class="video-meta">
+        El Canal de las Emociones
+         · <span class="views-badge">699 vistas</span>
+         · hace 4h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=UiJ3fa-72rs" target="_blank" rel="noopener">Detienen a una doctora venezolana que iba junto a su niña a su cita en corte</a></div>
+      <div class="video-meta">
+        Mario Pentón
+         · <span class="views-badge">9K vistas</span>
+         · hace 6h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=U0SsY3NMkPc" target="_blank" rel="noopener">Juan Manuel Cao Live | Lunes 13 de Abril 2026</a></div>
+      <div class="video-meta">
+        Juan Manuel Cao
+        
+         · hace 1h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=Pz4-Jk7Kq9c" target="_blank" rel="noopener">URGENTE: TRUMP ENVÍA MENSAJE A CUBA Y ASEGURA PUEDEN PASAR POR LA ISLA DESPUÉS DE TERMINAR CON IRÁN</a></div>
+      <div class="video-meta">
+        Daniel Benítez
+         · <span class="views-badge">21K vistas</span>
+         · hace 8h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=lu1pzDfpJ-Q" target="_blank" rel="noopener">Díaz-Canel MIENTE en Ginebra sobre crisis cubana y bloqueo energético</a></div>
+      <div class="video-meta">
+        Cubanos por el Mundo
+         · <span class="views-badge">5K vistas</span>
+         · hace 14h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=L34qtbYbNNU" target="_blank" rel="noopener">YOM HASHOAH</a></div>
+      <div class="video-meta">
+        Abraham Rivera
+         · <span class="views-badge">216 vistas</span>
+         · hace 8h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=NGJVa7oeRZs" target="_blank" rel="noopener">Elecciones en Perú plantean un escenario incierto</a></div>
+      <div class="video-meta">
+        CiberCuba
+         · <span class="views-badge">5 vistas</span>
+         · hace 7h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/shorts/3kBrlqEocLI" target="_blank" rel="noopener">El Rey 👑 del Epoxi #cubanos #miami</a></div>
+      <div class="video-meta">
+        El Canal de las Emociones
+         · <span class="views-badge">251 vistas</span>
+         · hace 6h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/shorts/pbo8OI5hgkM" target="_blank" rel="noopener">Mi doctor 🧑‍⚕️💚 #cubanos #miami</a></div>
+      <div class="video-meta">
+        El Canal de las Emociones
+         · <span class="views-badge">214 vistas</span>
+         · hace 6h
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=ej2uf290RNY" target="_blank" rel="noopener">El efecto bumerán de Trump: Cómo su aventura en Irán lo tiene en jaque.</a></div>
+      <div class="video-meta">
+        23 y Flagler
+         · <span class="views-badge">11K vistas</span>
+         · ayer
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=ea4qRT7xdR4" target="_blank" rel="noopener">Fractura Inminente: Influencers y Seguidores de Trump rompen fila en masa.</a></div>
+      <div class="video-meta">
+        23 y Flagler
+         · <span class="views-badge">17K vistas</span>
+         · ayer
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=aeSTgTgkufs" target="_blank" rel="noopener">Díaz-Canel pierde el control en NBC al ser cuestionado en vivo</a></div>
+      <div class="video-meta">
+        Cubanos por el Mundo
+         · <span class="views-badge">15K vistas</span>
+         · ayer
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=nahCW0MI35I" target="_blank" rel="noopener">DICTADOR CUBANO DÍAZ CANEL LLORA EN LA ONU</a></div>
+      <div class="video-meta">
+        Carlitos Madrid
+         · <span class="views-badge">7K vistas</span>
+         · ayer
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=fcn7-Vp6UVk" target="_blank" rel="noopener">Por qué la caída de Orbán debilita al trumpismo hoy</a></div>
+      <div class="video-meta">
+        23 y Flagler
+         · <span class="views-badge">18K vistas</span>
+         · ayer
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=MJtrcWtYlGw" target="_blank" rel="noopener">Hermana de la activista cubana, Anna Bensi revela cómo el G2 la intimidó en Cuba</a></div>
+      <div class="video-meta">
+        Cubanos por el Mundo
+         · <span class="views-badge">5K vistas</span>
+         · ayer
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/watch?v=X_9Ew4KBqgo" target="_blank" rel="noopener">URGENTE: CAMBIO COMPLETO DE RÉGIMEN EN CUBA AHORA, LO QUE PIDE ESTE IMPORTANTE POLÍTICO DE FLORIDA</a></div>
+      <div class="video-meta">
+        Daniel Benítez
+         · <span class="views-badge">34K vistas</span>
+         · ayer
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/shorts/4brJlmRUDu8" target="_blank" rel="noopener">La increíble amenaza de la Seguridad del Estado en #Cuba a hermana de influencer Anna Bensi</a></div>
+      <div class="video-meta">
+        Rolando Nápoles
+         · <span class="views-badge">58K vistas</span>
+         · ayer
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/shorts/JxE0KL8O4G0" target="_blank" rel="noopener">Encuestas en Cuba: La Verdad Detrás de las Misiones Médicas. #shorts</a></div>
+      <div class="video-meta">
+        Juan Manuel Cao
+         · <span class="views-badge">9K vistas</span>
+         · ayer
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-card">
+    <div class="video-info">
+      <div class="video-title"><a href="https://www.youtube.com/shorts/HrTa-VlUduE" target="_blank" rel="noopener">¡Urgente! Golpiza a preso político en Ahuica #shorts</a></div>
+      <div class="video-meta">
+        Juan Manuel Cao
+         · <span class="views-badge">2K vistas</span>
+         · ayer
+      </div>
+    </div>
+  </div>
+  
+  
+
+  
+</div>
+
+<!-- ─────────── TAB: TRENDING ─────────── -->
+<div id="tab-trending" class="tab-panel" role="tabpanel">
+  
+  
+  <div class="section-label" style="margin-top:.25rem">📊 Lo más relevante hoy</div>
+  
+  <div class="trending-item">
+    <div class="trending-rank">1</div>
+    <div class="trending-info">
+      <div class="trending-title">
+        🎥 
+        <a href="https://www.youtube.com/watch?v=weknGyaqOrA" target="_blank" rel="noopener">Régimen cubano y sus aliados preparan una trampa con ciertos presos políticos</a>
+      </div>
+      <div class="trending-meta">
+        <span class="badge badge-diaspora">diaspora</span>
+        Mario Pentón
+         · <span class="views-badge">24K vistas</span>
+         · hace 5h
+        · <span style="font-size:.7rem;color:#bbb">relevancia 96%</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="trending-item">
+    <div class="trending-rank">2</div>
+    <div class="trending-info">
+      <div class="trending-title">
+        🎥 
+        <a href="https://www.youtube.com/watch?v=_ir0OfzA8z4" target="_blank" rel="noopener">TRUMP ENVIA NUEVO MENSAJE A LOS EXILIADOS CUBANOS | Juan Manuel Cao Live | Lunes 13 de Abril 2026</a>
+      </div>
+      <div class="trending-meta">
+        <span class="badge badge-diaspora">diaspora</span>
+        Juan Manuel Cao
+         · <span class="views-badge">17K vistas</span>
+         · hace un momento
+        · <span style="font-size:.7rem;color:#bbb">relevancia 93%</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="trending-item">
+    <div class="trending-rank">3</div>
+    <div class="trending-info">
+      <div class="trending-title">
+        🎥 
+        <a href="https://www.youtube.com/watch?v=LNGfpNz6OPM" target="_blank" rel="noopener">Trump cede ante la presión: Por qué borró su post de "Jesucristo"</a>
+      </div>
+      <div class="trending-meta">
+        <span class="badge badge-independiente">independiente</span>
+        23 y Flagler
+         · <span class="views-badge">48K vistas</span>
+         · hace 7h
+        · <span style="font-size:.7rem;color:#bbb">relevancia 93%</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="trending-item">
+    <div class="trending-rank">4</div>
+    <div class="trending-info">
+      <div class="trending-title">
+        🎥 
+        <a href="https://www.youtube.com/shorts/-BpisXCUq28" target="_blank" rel="noopener">Análisis: Díaz-Canel cometió un grave error en entrevista con NBC. En Washington observan</a>
+      </div>
+      <div class="trending-meta">
+        <span class="badge badge-independiente">independiente</span>
+        Martí Noticias
+         · <span class="views-badge">7K vistas</span>
+         · hace 7h
+        · <span style="font-size:.7rem;color:#bbb">relevancia 92%</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="trending-item">
+    <div class="trending-rank">5</div>
+    <div class="trending-info">
+      <div class="trending-title">
+        🎥 
+        <a href="https://www.youtube.com/watch?v=hwuIRYXM6J8" target="_blank" rel="noopener">¿Presos políticos en Cuba? La respuesta del dictador cubano que demuestra el cinismo del régimen</a>
+      </div>
+      <div class="trending-meta">
+        <span class="badge badge-independiente">independiente</span>
+        Daniel Benítez
+         · <span class="views-badge">228 vistas</span>
+         · hace 3h
+        · <span style="font-size:.7rem;color:#bbb">relevancia 91%</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="trending-item">
+    <div class="trending-rank">6</div>
+    <div class="trending-info">
+      <div class="trending-title">
+        🎥 
+        <a href="https://www.youtube.com/watch?v=zX3G3EL6zgk" target="_blank" rel="noopener">Joven influencer Anna Bensi revela detalles del interrogatorio y amenazas a las que la sometieron</a>
+      </div>
+      <div class="trending-meta">
+        <span class="badge badge-diaspora">diaspora</span>
+        Mario Pentón
+         · <span class="views-badge">6K vistas</span>
+         · hace 3h
+        · <span style="font-size:.7rem;color:#bbb">relevancia 91%</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="trending-item">
+    <div class="trending-rank">7</div>
+    <div class="trending-info">
+      <div class="trending-title">
+        🎥 
+        <a href="https://www.youtube.com/watch?v=gnjQsgKodJ8" target="_blank" rel="noopener">LAS NOTICIAS COMO SON</a>
+      </div>
+      <div class="trending-meta">
+        <span class="badge badge-independiente">independiente</span>
+        Martí Noticias
+         · <span class="views-badge">3K vistas</span>
+         · hace 7h
+        · <span style="font-size:.7rem;color:#bbb">relevancia 90%</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="trending-item">
+    <div class="trending-rank">8</div>
+    <div class="trending-info">
+      <div class="trending-title">
+        
+        <a href="https://www.cubanet.org/archivan-denuncia-contra-anna-bensi-y-su-madre-pero-las-amenazan-con-llevarlas-a-prision/" target="_blank" rel="noopener">Archivan denuncia contra Anna Bensi y su madre, pero las amenazan con llevarlas a prisión</a>
+      </div>
+      <div class="trending-meta">
+        <span class="badge badge-independiente">independiente</span>
+        Cubanet
+        
+         · hace 4h
+        · <span style="font-size:.7rem;color:#bbb">relevancia 90%</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="trending-item">
+    <div class="trending-rank">9</div>
+    <div class="trending-info">
+      <div class="trending-title">
+        🎥 
+        <a href="https://www.youtube.com/watch?v=rSI1jRt2xbE" target="_blank" rel="noopener">🇺🇸 ¿Qué significa cerrar el Estrecho de Ormuz?</a>
+      </div>
+      <div class="trending-meta">
+        <span class="badge badge-diaspora">diaspora</span>
+        Pepe Fuerte
+         · <span class="views-badge">977 vistas</span>
+         · hace 3h
+        · <span style="font-size:.7rem;color:#bbb">relevancia 90%</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="trending-item">
+    <div class="trending-rank">10</div>
+    <div class="trending-info">
+      <div class="trending-title">
+        🎥 
+        <a href="https://www.youtube.com/watch?v=k76pusfF80o" target="_blank" rel="noopener">💥 “¡SE ACERCA EL TURNO DE CUBA!”</a>
+      </div>
+      <div class="trending-meta">
+        <span class="badge badge-diaspora">diaspora</span>
+        Rolando Nápoles
+         · <span class="views-badge">2K vistas</span>
+         · hace 4h
+        · <span style="font-size:.7rem;color:#bbb">relevancia 90%</span>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  
+  <div class="section-label" style="margin-top:1rem">🔥 Más vistos en YouTube</div>
+  
+  <div class="trending-item">
+    <div class="trending-rank">1</div>
+    <div class="trending-info">
+      <div class="trending-title"><a href="https://www.youtube.com/shorts/YnK7TAZAae8" target="_blank" rel="noopener">#ÚltimaHora | Trump dice que EEUU pasará por #Cuba cuando termine con Irán</a></div>
+      <div class="trending-meta">
+        Mario Pentón
+         · <span class="views-badge">78K vistas</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="trending-item">
+    <div class="trending-rank">2</div>
+    <div class="trending-info">
+      <div class="trending-title"><a href="https://www.youtube.com/shorts/4brJlmRUDu8" target="_blank" rel="noopener">La increíble amenaza de la Seguridad del Estado en #Cuba a hermana de influencer Anna Bensi</a></div>
+      <div class="trending-meta">
+        Rolando Nápoles
+         · <span class="views-badge">58K vistas</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="trending-item">
+    <div class="trending-rank">3</div>
+    <div class="trending-info">
+      <div class="trending-title"><a href="https://www.youtube.com/watch?v=LNGfpNz6OPM" target="_blank" rel="noopener">Trump cede ante la presión: Por qué borró su post de "Jesucristo"</a></div>
+      <div class="trending-meta">
+        23 y Flagler
+         · <span class="views-badge">48K vistas</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="trending-item">
+    <div class="trending-rank">4</div>
+    <div class="trending-info">
+      <div class="trending-title"><a href="https://www.youtube.com/watch?v=qsODZCT-Ykk" target="_blank" rel="noopener">Alex Otaola en vivo, noticias de Cuba - Hola! Ota-Ola (lunes 13 de abril del 2026) [TRANSMISIÓN]</a></div>
+      <div class="trending-meta">
+        Cubanos por el Mundo
+         · <span class="views-badge">35K vistas</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="trending-item">
+    <div class="trending-rank">5</div>
+    <div class="trending-info">
+      <div class="trending-title"><a href="https://www.youtube.com/watch?v=X_9Ew4KBqgo" target="_blank" rel="noopener">URGENTE: CAMBIO COMPLETO DE RÉGIMEN EN CUBA AHORA, LO QUE PIDE ESTE IMPORTANTE POLÍTICO DE FLORIDA</a></div>
+      <div class="trending-meta">
+        Daniel Benítez
+         · <span class="views-badge">34K vistas</span>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  
+</div>
+
+<!-- ─────────── TAB: CUBA GLOBAL ─────────── -->
+<div id="tab-global" class="tab-panel" role="tabpanel">
+  
+
+  
+  <div class="empty-state">
+    <span class="emoji">🌐</span>
+    <p>No hay cobertura internacional de Cuba disponible hoy.</p>
+    <p style="font-size:.8rem;color:#bbb;margin-top:.5rem">Los medios internacionales configurados (BBC Mundo, Reuters) no publicaron artículos sobre Cuba en las últimas 48 horas.</p>
+  </div>
+  
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    Cuba Digest v2.0 · Generado el 2026-04-14 04:00 UTC · 70 items · 16 fuentes
+  </div>
+</footer>
+
+<script>
+// ── Tab switching ─────────────────────────────────────────────────────────────
+(function() {
+  var btns = document.querySelectorAll('.tab-btn');
+  btns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var target = this.getAttribute('data-tab');
+      document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+      document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+      this.classList.add('active');
+      var panel = document.getElementById('tab-' + target);
+      if (panel) panel.classList.add('active');
+    });
+  });
+})();
+
+// ── Estatal toggle ────────────────────────────────────────────────────────────
+(function() {
+  var toggle = document.getElementById('estatal-toggle');
+  if (!toggle) return;
+
+  function applyToggle() {
+    var show = toggle.checked;
+    document.querySelectorAll('[data-estatal]').forEach(function(el) {
+      el.classList.toggle('visible', show);
+    });
+    try { sessionStorage.setItem('estatal', show ? '1' : '0'); } catch(e) {}
+  }
+
+  // Restore from session
+  try {
+    if (sessionStorage.getItem('estatal') === '1') toggle.checked = true;
+  } catch(e) {}
+
+  toggle.addEventListener('change', applyToggle);
+  applyToggle();
+})();
+
+// ── Collapsible source groups ─────────────────────────────────────────────────
+function toggleCollapsible(trigger) {
+  trigger.classList.toggle('open');
+  var body = trigger.nextElementSibling;
+  if (body) body.classList.toggle('open');
+}
+
+// ── More items toggle ─────────────────────────────────────────────────────────
+function toggleMore(el) {
+  var more = el.nextElementSibling;
+  if (!more) return;
+  var open = more.classList.toggle('open');
+  el.textContent = open ? '▴ Ver menos' : el.textContent.replace('▴ Ver menos', '') || '+ Ver más ▾';
+}
+</script>
+
+</body>
+</html>
